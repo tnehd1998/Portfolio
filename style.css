@@ -106,6 +106,7 @@ p {
   padding: 16px;
   position: fixed;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -151,7 +152,7 @@ p {
 }
 
 /* Home */
-.home {
+#home {
   background: url("imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
