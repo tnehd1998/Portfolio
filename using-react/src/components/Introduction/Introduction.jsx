@@ -14,6 +14,19 @@ const IntroductionContent = styled.div`
   align-items: center;
   font-size: 32px;
 `;
+
+const IntroductionText = styled.h1`
+  animation: changeColorText 5s infinite;
+  @keyframes changeColorText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
 const Introduction = () => {
   const [describe, setDescribe] = useState(1);
   const [describeText, setDescibeText] = useState("꿈꾸는");
@@ -50,10 +63,10 @@ const Introduction = () => {
   }, [repeatDescribe]);
   return (
     <IntroductionContent>
-      <h1>
+      <IntroductionText>
         안녕하세요! <br />
         {describeText} 개발자 이수동입니다.
-      </h1>
+      </IntroductionText>
     </IntroductionContent>
   );
 };
