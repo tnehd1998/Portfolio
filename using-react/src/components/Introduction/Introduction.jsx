@@ -3,12 +3,6 @@ import styled from "styled-components";
 
 const IntroductionContent = styled.div`
   height: 100vh;
-  background: rgb(22, 230, 220);
-  background: linear-gradient(
-    83deg,
-    rgba(22, 230, 220, 1) 32%,
-    rgba(14, 125, 233, 1) 75%
-  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,12 +11,16 @@ const IntroductionContent = styled.div`
 
 const IntroductionText = styled.h1`
   animation: changeColorText 5s infinite;
+  background: transparent;
   @keyframes changeColorText {
-    from {
+    0% {
       opacity: 0;
     }
-    to {
+    50% {
       opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 `;

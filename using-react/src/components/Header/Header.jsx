@@ -17,6 +17,7 @@ const WebsiteLogo = styled.img`
   height: 4rem;
   padding-left: 2rem;
   cursor: pointer;
+  background: transparent;
   &:hover {
     animation: rotatingAnimation 1s infinite;
   }
@@ -39,12 +40,14 @@ const NavMenuList = styled.ul`
   justify-content: center;
   align-items: center;
   padding-right: 2rem;
+  background: transparent;
 `;
 
 const NavMenuItem = styled.li`
   font-size: 1.5rem;
   padding: 0rem 1rem;
   cursor: pointer;
+  background: transparent;
   &:hover {
     color: white;
   }
