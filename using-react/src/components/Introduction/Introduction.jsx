@@ -6,7 +6,7 @@ const IntroductionContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 64px;
 `;
 
 const IntroductionText = styled.h1`
@@ -16,8 +16,14 @@ const IntroductionText = styled.h1`
     0% {
       opacity: 0;
     }
+    10% {
+      opacity: 0;
+    }
     50% {
       opacity: 1;
+    }
+    90% {
+      opacity: 0;
     }
     100% {
       opacity: 0;

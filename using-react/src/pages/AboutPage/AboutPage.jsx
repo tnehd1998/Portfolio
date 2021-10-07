@@ -1,7 +1,8 @@
 import React from "react";
+import PersonalDescription from "../../components/PersonalDescription/PersonalDescription";
 
 const AboutPage = () => {
-  return <div></div>;
+  return <PersonalDescription />;
 };
 
 export default AboutPage;

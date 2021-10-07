@@ -1,6 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../assets/images/website-logo.png";
+
+const HeaderLink = styled(Link)`
+  box-sizing: border-box;
+`;
 
 const WebsiteHeader = styled.div`
   width: 100%;
@@ -10,6 +15,7 @@ const WebsiteHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
+  margin: 0;
 `;
 
 const WebsiteLogo = styled.img`
@@ -56,9 +62,13 @@ const NavMenuItem = styled.li`
 const Header = () => {
   return (
     <WebsiteHeader>
-      <WebsiteLogo src={Logo} />
+      <HeaderLink to="/">
+        <WebsiteLogo src={Logo} />
+      </HeaderLink>
       <NavMenuList>
-        <NavMenuItem>About</NavMenuItem>
+        <HeaderLink to="/about">
+          <NavMenuItem>About</NavMenuItem>
+        </HeaderLink>
         <NavMenuItem>Projects</NavMenuItem>
       </NavMenuList>
     </WebsiteHeader>
