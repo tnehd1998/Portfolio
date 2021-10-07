@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
 
 const IntroductionContent = styled.div`
@@ -35,7 +35,7 @@ const Introduction = () => {
   const [describe, setDescribe] = useState(1);
   const [describeText, setDescibeText] = useState("꿈꾸는");
 
-  const changeDescribe = () => {
+  const changeDescribe = useCallback(() => {
     switch (describe) {
       case 1:
         setDescibeText("노력하는");
@@ -56,15 +56,11 @@ const Introduction = () => {
       default:
         break;
     }
-  };
-
-  const repeatDescribe = () => {
-    setTimeout(changeDescribe, 5000);
-  };
+  }, [describe]);
 
   useEffect(() => {
-    repeatDescribe();
-  }, [repeatDescribe]);
+    setTimeout(() => changeDescribe(), 5000);
+  }, [changeDescribe]);
   return (
     <IntroductionContent>
       <IntroductionText>
