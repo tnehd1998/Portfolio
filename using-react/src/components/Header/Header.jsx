@@ -60,7 +60,7 @@ const NavMenuItem = styled.li`
   background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
 
   &:hover {
-    color: skyblue;
+    color: white;
   }
 `;
 

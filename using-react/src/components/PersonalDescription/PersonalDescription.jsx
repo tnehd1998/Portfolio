@@ -1,6 +1,7 @@
 import React from "react";
 import Face from "../../assets/images/profile.jpeg";
 import styled from "styled-components";
+import TechStackItem from "../TechStackItem/TechStackItem";
 
 const PersonalDescriptionContainer = styled.div`
   padding-top: 20vh;
@@ -11,7 +12,7 @@ const DescriptionContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60vh;
+  height: 80vh;
 `;
 
 const CommentTitle = styled.div`
@@ -40,33 +41,39 @@ const TechStackContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60vh;
+  height: 200vh;
+  margin-top: 5rem;
+`;
+
+const TechStackTitle = styled.p`
+  font-size: 24px;
 `;
 
 const TechStackItems = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-top: 100px;
+  gap: 4rem;
+  margin: 4rem 0;
 `;
 
 const PersonalDescription = () => {
   return (
     <PersonalDescriptionContainer>
-      <CommentTitle>About Me</CommentTitle>
+      <CommentTitle>About Me 🧑🏻‍💻</CommentTitle>
       <DescriptionContainer>
         <CommentContainer>
           <DescriptionComment>
-            안녕하세요! 개발과 야구를 사랑하는 프론트엔드 개발자 이수동입니다.
+            안녕하세요! 개발🧑🏻‍💻과 야구⚾️를 사랑하는 프론트엔드 개발자
+            이수동입니다.
           </DescriptionComment>
           <DescriptionComment>
-            개발을 잘하는 개발자보다 꾸준한 개발자가 되기 위해 노력중입니다.
+            개발을 잘하는 개발자보다 꾸준한 개발자⏳가 되기 위해 노력중입니다.
           </DescriptionComment>
           <DescriptionComment>
-            꾸준함의 중요성을 잘 알기 때문에 1일 1커밋 운동을 하고 있습니다.
+            꾸준함의 중요성을 잘 알기 때문에 🌱1일 1커밋 운동🌱을 하고 있습니다.
           </DescriptionComment>
           <DescriptionComment>
-            무작정 작동하는 코드보다 효율적인 코드를 짜기위해 항상 고민하고
+            무작정 작동하는 코드보다 효율적인 코드🧮를 짜기위해 항상 고민하고
             있습니다.
           </DescriptionComment>
         </CommentContainer>
@@ -74,15 +81,75 @@ const PersonalDescription = () => {
       </DescriptionContainer>
       <CommentTitle>Tech Stack</CommentTitle>
       <TechStackContainer>
+        <TechStackTitle>Frontend</TechStackTitle>
         <TechStackItems>
-          <li>hi</li>
-          <li>hi</li>
-          <li>hi</li>
-          <li>hi</li>
-          <li>hi</li>
-          <li>hi</li>
-          <li>hi</li>
-          <li>hi</li>
+          <TechStackItem name={"HTML5"} imageUrl={"tech-stack-img/html5.png"} />
+          <TechStackItem name={"CSS3"} imageUrl={"tech-stack-img/css3.png"} />
+          <TechStackItem
+            name={"SASS/SCSS"}
+            imageUrl={"tech-stack-img/sass.png"}
+          />
+          <TechStackItem
+            name={"styled-components"}
+            imageUrl={"tech-stack-img/styled-components.png"}
+          />
+          <TechStackItem
+            name={"JavaScript"}
+            imageUrl={"tech-stack-img/javascript.png"}
+          />
+          <TechStackItem
+            name={"TypeScript"}
+            imageUrl={"tech-stack-img/typescript.png"}
+          />
+          <TechStackItem name={"React"} imageUrl={"tech-stack-img/react.png"} />
+          <TechStackItem name={"Redux"} imageUrl={"tech-stack-img/redux.png"} />
+          <TechStackItem
+            name={"Redux-Saga"}
+            imageUrl={"tech-stack-img/redux-saga.png"}
+          />
+          <TechStackItem
+            name={"React Hooks"}
+            imageUrl={"tech-stack-img/react-hooks.png"}
+          />
+          <TechStackItem
+            name={"GraphQL"}
+            imageUrl={"tech-stack-img/graphql.png"}
+          />
+        </TechStackItems>
+        <TechStackTitle>Backend</TechStackTitle>
+        <TechStackItems>
+          <TechStackItem
+            name={"NodeJS"}
+            imageUrl={"tech-stack-img/nodejs.png"}
+          />
+          <TechStackItem
+            name={"Express"}
+            imageUrl={"tech-stack-img/express.png"}
+          />
+          <TechStackItem
+            name={"PostgreSQL"}
+            imageUrl={"tech-stack-img/postgresql.png"}
+          />
+          <TechStackItem
+            name={"Oracle"}
+            imageUrl={"tech-stack-img/oracle.png"}
+          />
+          <TechStackItem
+            name={"MongoDB"}
+            imageUrl={"tech-stack-img/mongodb.png"}
+          />
+        </TechStackItems>
+        <TechStackTitle>Developer Tools</TechStackTitle>
+        <TechStackItems>
+          <TechStackItem name={"Git"} imageUrl={"tech-stack-img/git.png"} />
+          <TechStackItem
+            name={"Github"}
+            imageUrl={"tech-stack-img/github.png"}
+          />
+          <TechStackItem
+            name={"Firebase"}
+            imageUrl={"tech-stack-img/firebase.png"}
+          />
         </TechStackItems>
       </TechStackContainer>
     </PersonalDescriptionContainer>
