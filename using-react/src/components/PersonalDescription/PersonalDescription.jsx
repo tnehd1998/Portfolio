@@ -3,6 +3,7 @@ import Face from "../../assets/images/profile.jpeg";
 import styled from "styled-components";
 
 const PersonalDescriptionContainer = styled.div`
+  padding-top: 20vh;
   height: 100%;
 `;
 
@@ -11,6 +12,11 @@ const DescriptionContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 60vh;
+`;
+
+const CommentTitle = styled.div`
+  font-size: 32px;
+  text-align: center;
 `;
 
 const CommentContainer = styled.div`
@@ -47,6 +53,7 @@ const TechStackItems = styled.ul`
 const PersonalDescription = () => {
   return (
     <PersonalDescriptionContainer>
+      <CommentTitle>About Me</CommentTitle>
       <DescriptionContainer>
         <CommentContainer>
           <DescriptionComment>
@@ -65,8 +72,8 @@ const PersonalDescription = () => {
         </CommentContainer>
         <FaceImage src={Face} alt="Face" />
       </DescriptionContainer>
+      <CommentTitle>Tech Stack</CommentTitle>
       <TechStackContainer>
-        <DescriptionComment>Tech Stack</DescriptionComment>
         <TechStackItems>
           <li>hi</li>
           <li>hi</li>

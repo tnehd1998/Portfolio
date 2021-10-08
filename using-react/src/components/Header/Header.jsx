@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../assets/images/website-logo.png";
 
 const HeaderLink = styled(Link)`
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 `;
 
 const WebsiteHeader = styled.div`
   width: 100%;
   display: flex;
-  background-color: transparent;
+  background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
+  opacity: ${(props) => (props.bgTransparent ? 1 : 0.9)};
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
-  margin: 0;
+  padding: 2rem 0;
 `;
 
 const WebsiteLogo = styled.img`
@@ -23,7 +25,8 @@ const WebsiteLogo = styled.img`
   height: 4rem;
   padding-left: 2rem;
   cursor: pointer;
-  background: transparent;
+  background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
+
   &:hover {
     animation: rotatingAnimation 1s infinite;
   }
@@ -46,30 +49,49 @@ const NavMenuList = styled.ul`
   justify-content: center;
   align-items: center;
   padding-right: 2rem;
-  background: transparent;
+  background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
 `;
 
 const NavMenuItem = styled.li`
+  list-style: none;
   font-size: 1.5rem;
   padding: 0rem 1rem;
   cursor: pointer;
-  background: transparent;
+  background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
+
   &:hover {
-    color: white;
+    color: skyblue;
   }
 `;
 
 const Header = () => {
+  const [bgTransparent, setBgTransparent] = useState(true);
+
+  const calculateHeightY = () => {
+    const currentY = window.pageYOffset;
+    setBgTransparent(currentY ? false : true);
+  };
+
+  useEffect(() => {
+    function watchScroll() {
+      window.addEventListener("scroll", calculateHeightY);
+    }
+    watchScroll();
+    return () => {
+      window.removeEventListener("scroll", calculateHeightY);
+    };
+  });
+
   return (
-    <WebsiteHeader>
+    <WebsiteHeader bgTransparent={bgTransparent}>
       <HeaderLink to="/">
-        <WebsiteLogo src={Logo} />
+        <WebsiteLogo src={Logo} bgTransparent={bgTransparent} />
       </HeaderLink>
-      <NavMenuList>
+      <NavMenuList bgTransparent={bgTransparent}>
         <HeaderLink to="/about">
-          <NavMenuItem>About</NavMenuItem>
+          <NavMenuItem bgTransparent={bgTransparent}>About</NavMenuItem>
         </HeaderLink>
-        <NavMenuItem>Projects</NavMenuItem>
+        <NavMenuItem bgTransparent={bgTransparent}>Projects</NavMenuItem>
       </NavMenuList>
     </WebsiteHeader>
   );
