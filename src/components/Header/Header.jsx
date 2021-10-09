@@ -92,6 +92,7 @@ const Header = () => {
           <NavMenuItem bgTransparent={bgTransparent}>About</NavMenuItem>
         </HeaderLink>
         <NavMenuItem bgTransparent={bgTransparent}>Projects</NavMenuItem>
+        <NavMenuItem bgTransparent={bgTransparent}>Contact</NavMenuItem>
       </NavMenuList>
     </WebsiteHeader>
   );

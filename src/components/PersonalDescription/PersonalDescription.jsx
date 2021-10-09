@@ -31,10 +31,33 @@ const DescriptionComment = styled.p`
   font-size: 24px;
 `;
 
+const FaceAndName = styled.div`
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 24px;
+  background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0,
+    radial-gradient(circle closest-side, #ffffff 53%, rgba(255, 255, 255, 0) 0)
+      0 0,
+    radial-gradient(circle closest-side, #ffffff 50%, rgba(255, 255, 255, 0) 0)
+      55px 0 #48b;
+  background-size: 110px 200px;
+  background-repeat: repeat-x;
+`;
+
 const FaceImage = styled.img`
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+`;
+
+const FaceDescription = styled.p`
+  margin-top: 1rem;
+  font-size: 24px;
 `;
 
 const TechStackContainer = styled.div`
@@ -77,7 +100,10 @@ const PersonalDescription = () => {
             있습니다.
           </DescriptionComment>
         </CommentContainer>
-        <FaceImage src={Face} alt="Face" />
+        <FaceAndName>
+          <FaceImage src={Face} alt="Face" />
+          <FaceDescription>Billy the Coder</FaceDescription>
+        </FaceAndName>
       </DescriptionContainer>
       <CommentTitle>Tech Stack</CommentTitle>
       <TechStackContainer>
