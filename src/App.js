@@ -13,6 +13,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import MainPage from "./pages/MainPage/MainPage";
 
 import backgroundImage from "./assets/images/background.png";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
 
 const AppFormat = styled.div`
   font-family: "Jua", sans-serif;
@@ -28,6 +29,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/projects" component={ProjectPage} />
         <Redirect from="*" to="/" />
       </Switch>
     </AppFormat>

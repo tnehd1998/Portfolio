@@ -65,7 +65,7 @@ const TechStackContainer = styled.div`
   flex-direction: column;
   align-items: center;
   height: 200vh;
-  margin-top: 5rem;
+  margin-top: 8rem;
 `;
 
 const TechStackTitle = styled.p`
@@ -76,7 +76,7 @@ const TechStackItems = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 4rem;
-  margin: 4rem 0;
+  margin: 7rem 0;
 `;
 
 const PersonalDescription = () => {

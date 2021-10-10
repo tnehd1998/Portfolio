@@ -27,11 +27,13 @@ const SkillBar = styled.div`
   width: 5rem;
   height: 5px;
   background-color: white;
+  border-radius: 2px;
 `;
 
 const SkillBarRange = styled.div`
   width: ${(props) => `${props.level}%`};
   height: 5px;
+  border-radius: 2px 0px 0px 2px;
   background-color: ${(props) =>
     props.level > 70 ? "green" : props.level > 40 ? "yellow" : "red"};
 `;
