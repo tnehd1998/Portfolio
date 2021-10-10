@@ -32,6 +32,10 @@ const ProjectItemDescription = styled.p`
 const ProjectLink = styled.a`
   text-decoration: none;
   color: black;
+
+  &:hover {
+    color: white;
+  }
 `;
 
 const ProjectItem = ({ imageUrl, title, description, projectLink }) => {
@@ -41,7 +45,9 @@ const ProjectItem = ({ imageUrl, title, description, projectLink }) => {
       <ProjectItemDescriptionContainer>
         <ProjectItemTitle>{title}</ProjectItemTitle>
         <ProjectItemDescription>{description}</ProjectItemDescription>
-        <ProjectLink href={projectLink}>해당 프로젝트로 이동</ProjectLink>
+        <ProjectLink href={projectLink}>
+          &#8594; 해당 프로젝트로 이동
+        </ProjectLink>
       </ProjectItemDescriptionContainer>
     </ProjectItemContainer>
   );

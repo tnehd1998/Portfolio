@@ -59,7 +59,10 @@ const Introduction = () => {
   }, [describe]);
 
   useEffect(() => {
-    setTimeout(() => changeDescribe(), 5000);
+    const timer = setTimeout(() => changeDescribe(), 5000);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [changeDescribe]);
   return (
     <IntroductionContent>
