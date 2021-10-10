@@ -72,6 +72,10 @@ const Header = () => {
     setBgTransparent(currentY ? false : true);
   };
 
+  const moveScrolltoDefault = () => {
+    window.scrollTo(0, 0);
+  };
+
   useEffect(() => {
     function watchScroll() {
       window.addEventListener("scroll", calculateHeightY);
@@ -84,14 +88,16 @@ const Header = () => {
 
   return (
     <WebsiteHeader bgTransparent={bgTransparent}>
-      <HeaderLink to="/">
+      <HeaderLink to="/" onClick={moveScrolltoDefault}>
         <WebsiteLogo src={Logo} bgTransparent={bgTransparent} />
       </HeaderLink>
       <NavMenuList bgTransparent={bgTransparent}>
-        <HeaderLink to="/about">
+        <HeaderLink to="/about" onClick={moveScrolltoDefault}>
           <NavMenuItem bgTransparent={bgTransparent}>About</NavMenuItem>
         </HeaderLink>
-        <NavMenuItem bgTransparent={bgTransparent}>Projects</NavMenuItem>
+        <HeaderLink to="/projects" onClick={moveScrolltoDefault}>
+          <NavMenuItem bgTransparent={bgTransparent}>Projects</NavMenuItem>
+        </HeaderLink>
         <NavMenuItem bgTransparent={bgTransparent}>Contact</NavMenuItem>
       </NavMenuList>
     </WebsiteHeader>
