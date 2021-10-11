@@ -69,14 +69,14 @@ const ContactInfo = () => {
             target="_blank"
             item={"github"}
           >
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </ContactLinkIcon>
           <ContactLinkIcon
             href="https://www.linkedin.com/in/%EC%88%98%EB%8F%99-%EC%9D%B4-45142a220/"
             target="_blank"
             item={"linkedIn"}
           >
-            <i class="fa fa-linkedin-square"></i>
+            <i className="fa fa-linkedin-square"></i>
           </ContactLinkIcon>
         </ContactLinkContainer>
       </ContactBackground>
