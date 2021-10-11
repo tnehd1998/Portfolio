@@ -11,8 +11,8 @@ const ContactInfoContainer = styled.div`
 `;
 
 const ContactBackground = styled.div`
-  width: 25rem;
-  height: 25rem;
+  width: 26rem;
+  height: 26rem;
   border-radius: 25%;
   background-color: white;
   display: flex;

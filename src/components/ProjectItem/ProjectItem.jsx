@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ProjectItemContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 4rem 0;
 `;
 
 const ProjectItemImage = styled.img`

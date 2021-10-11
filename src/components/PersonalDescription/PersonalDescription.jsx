@@ -5,7 +5,7 @@ import TechStackItem from "../TechStackItem/TechStackItem";
 
 const PersonalDescriptionContainer = styled.div`
   padding-top: 20vh;
-  height: 150vw;
+  height: 320vh;
 `;
 
 const DescriptionContainer = styled.div`
@@ -64,7 +64,6 @@ const TechStackContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150vh;
   margin-top: 8rem;
 `;
 
