@@ -24,7 +24,7 @@ const AppFormat = styled.div`
 `;
 
 const App = () => (
-  <Router>
+  <Router basename="/Porfolio">
     <AppFormat>
       <Header />
       <Switch>
