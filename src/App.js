@@ -5,7 +5,7 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
-import "./GlobalStyles.css";
+import "./App.css";
 import styled from "styled-components";
 
 import Header from "./components/Header/Header";
@@ -14,6 +14,7 @@ import MainPage from "./pages/MainPage/MainPage";
 
 import backgroundImage from "./assets/images/background.png";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 const AppFormat = styled.div`
   font-family: "Jua", sans-serif;
@@ -30,6 +31,7 @@ const App = () => (
         <Route exact path="/" component={MainPage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/projects" component={ProjectPage} />
+        <Route exact path="/contact" component={ContactPage} />
         <Redirect from="*" to="/" />
       </Switch>
     </AppFormat>

@@ -88,7 +88,7 @@ const Header = () => {
 
   return (
     <WebsiteHeader bgTransparent={bgTransparent}>
-      <HeaderLink to="/" onClick={moveScrolltoDefault}>
+      <HeaderLink to="/">
         <WebsiteLogo src={Logo} bgTransparent={bgTransparent} />
       </HeaderLink>
       <NavMenuList bgTransparent={bgTransparent}>
@@ -98,7 +98,9 @@ const Header = () => {
         <HeaderLink to="/projects" onClick={moveScrolltoDefault}>
           <NavMenuItem bgTransparent={bgTransparent}>Projects</NavMenuItem>
         </HeaderLink>
-        <NavMenuItem bgTransparent={bgTransparent}>Contact</NavMenuItem>
+        <HeaderLink to="/contact">
+          <NavMenuItem bgTransparent={bgTransparent}>Contact</NavMenuItem>
+        </HeaderLink>
       </NavMenuList>
     </WebsiteHeader>
   );
