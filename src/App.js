@@ -5,14 +5,14 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
+
 import "./App.css";
 import styled from "styled-components";
+import backgroundImage from "./assets/images/background.png";
 
 import Header from "./components/Header/Header";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import MainPage from "./pages/MainPage/MainPage";
-
-import backgroundImage from "./assets/images/background.png";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 

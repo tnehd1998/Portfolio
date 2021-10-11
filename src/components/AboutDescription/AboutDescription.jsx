@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import PersonalDescription from "../PersonalDescription/PersonalDescription";
 import TechStack from "../TechStack/TechStack";
 
