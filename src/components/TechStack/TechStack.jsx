@@ -1,5 +1,9 @@
 import React from "react";
-import styled from "styled-components";
+import {
+  TechStackContainer,
+  TechStackTitle,
+  TechStackItems,
+} from "./TechStack.styles.jsx";
 import TechStackItem from "../TechStackItem/TechStackItem";
 
 import HTML5Image from "../../assets/images/tech-stack-img/html5.png";
@@ -21,24 +25,6 @@ import MongoDBImage from "../../assets/images/tech-stack-img/mongodb.png";
 import GitImage from "../../assets/images/tech-stack-img/git.png";
 import GithubImage from "../../assets/images/tech-stack-img/github.png";
 import FirebaseImage from "../../assets/images/tech-stack-img/firebase.png";
-
-const TechStackContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 8rem;
-`;
-
-const TechStackTitle = styled.p`
-  font-size: 24px;
-`;
-
-const TechStackItems = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 4rem;
-  margin: 7rem 0;
-`;
 
 const TechStack = () => {
   return (

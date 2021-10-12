@@ -1,42 +1,13 @@
 import React from "react";
-import styled from "styled-components";
 
-const ProjectItemContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 4rem 0;
-`;
-
-const ProjectItemImage = styled.img`
-  width: 50vw;
-  height: 50vh;
-`;
-
-const ProjectItemDescriptionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 3rem;
-  width: 30vw;
-`;
-
-const ProjectItemTitle = styled.p`
-  font-size: 36px;
-`;
-
-const ProjectItemDescription = styled.p`
-  font-size: 24px;
-`;
-
-const ProjectLink = styled.a`
-  text-decoration: none;
-  color: black;
-
-  &:hover {
-    color: white;
-  }
-`;
+import {
+  ProjectItemContainer,
+  ProjectItemImage,
+  ProjectItemDescriptionContainer,
+  ProjectItemTitle,
+  ProjectItemDescription,
+  ProjectLink,
+} from "./ProjectItem.styles.jsx";
 
 const ProjectItem = ({ imageUrl, title, description, projectLink }) => {
   return (

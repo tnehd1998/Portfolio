@@ -1,27 +1,13 @@
 import React from "react";
-import styled from "styled-components";
+
+import {
+  ProjectPageContainer,
+  ProjectMainTitle,
+  ProjectTitle,
+} from "./ProjectInfo.styles.jsx";
 import ExampleImage from "../../assets/images/project-item-img/example.png";
 
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
-
-const ProjectPageContainer = styled.div`
-  height: 280vh;
-  display: flex;
-  flex-direction: column;
-  padding: 0 5rem;
-  padding-top: 20vh;
-`;
-
-const ProjectMainTitle = styled.p`
-  font-size: 32px;
-  text-align: center;
-`;
-
-const ProjectTitle = styled.p`
-  font-size: 32px;
-  margin-left: 12rem;
-  margin-top: 5rem;
-`;
 
 const ProjectInfo = () => {
   return (
