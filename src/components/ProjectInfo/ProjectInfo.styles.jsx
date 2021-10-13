@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ProjectPageContainer = styled.div`
-  height: 280vh;
   display: flex;
   flex-direction: column;
   padding: 0 5rem;
