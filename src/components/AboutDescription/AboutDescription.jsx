@@ -1,6 +1,7 @@
 import React from "react";
 
 import PersonalDescription from "../PersonalDescription/PersonalDescription";
+import CareerDescription from "../CareerDesciption/CareerDescription";
 import TechStack from "../TechStack/TechStack";
 
 import {
@@ -13,6 +14,8 @@ const AboutDescription = () => {
     <AboutDescriptionContainer>
       <CommentTitle>About Me 🧑🏻‍💻</CommentTitle>
       <PersonalDescription />
+      <CommentTitle>Career Path</CommentTitle>
+      <CareerDescription />
       <CommentTitle>Tech Stack</CommentTitle>
       <TechStack />
     </AboutDescriptionContainer>
