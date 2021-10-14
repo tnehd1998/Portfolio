@@ -1,16 +1,8 @@
 import React from "react";
 
 import KonkukImage from "../../assets/images/career-item/konkuk.jpeg";
-import styled from "styled-components";
 import CareerItem from "../CareerItem/CareerItem";
-
-const CareerDescriptionContainer = styled.ul`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem;
-`;
+import { CareerDescriptionContainer } from "./CareerDescription.styles";
 
 const CareerDescription = () => {
   return (
