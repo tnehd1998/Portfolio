@@ -12,11 +12,6 @@ const CareerDescription = () => {
         title={"건국대학교"}
         period={"2017.03 ~ 현재"}
       />
-      <CareerItem
-        imageUrl={KonkukImage}
-        title={"건국대학교"}
-        period={"2017.03 ~ 현재"}
-      />
     </CareerDescriptionContainer>
   );
 };
