@@ -18,9 +18,10 @@ const ProjectInfo = () => {
         imageUrl={Youtube}
         title={"유튜브 클론 프로젝트"}
         description={
-          "자주 사용하는 유튜브의 기능을 그대로 따라서 만들어본 프로젝트 (현재 진행중 21.10.14~)"
+          "자주 사용하는 유튜브의 기능을 그대로 따라서 만들어본 프로젝트 (21.10.14 ~ 현재 진행중)"
         }
         projectLink={"https://github.com/tnehd1998/Youtube"}
+        hashtags={["첫 프로젝트", "유튜브", "개인", "재미", "클론"]}
       />
       {/* <ProjectTitle>팀 프로젝트</ProjectTitle>
       <ProjectItem

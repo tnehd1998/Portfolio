@@ -28,6 +28,12 @@ export const ProjectItemDescription = styled.p`
   font-size: 24px;
 `;
 
+export const ProjectItemHashtags = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const ProjectLink = styled.a`
   text-decoration: none;
   color: black;
