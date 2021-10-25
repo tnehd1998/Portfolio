@@ -4,7 +4,9 @@ import {
   ProjectItemContainer,
   ProjectItemImage,
   ProjectItemDescriptionContainer,
+  ProjectItemHeading,
   ProjectItemTitle,
+  ProjectItemPeriod,
   ProjectItemDescription,
   ProjectLink,
   ProjectItemHashtags,
@@ -13,7 +15,8 @@ import {
 const ProjectItem = ({
   imageUrl,
   title,
-  description,
+  period,
+  descriptions,
   projectLink,
   hashtags,
 }) => {
@@ -21,13 +24,20 @@ const ProjectItem = ({
     <ProjectItemContainer>
       <ProjectItemImage src={imageUrl} />
       <ProjectItemDescriptionContainer>
-        <ProjectItemTitle>{title}</ProjectItemTitle>
-        <ProjectItemDescription>{description}</ProjectItemDescription>
+        <ProjectItemHeading>
+          <ProjectItemTitle>{title}</ProjectItemTitle>
+          <ProjectItemPeriod>{period}</ProjectItemPeriod>
+        </ProjectItemHeading>
         <ProjectItemHashtags>
           {hashtags.map((hashtag) => (
             <li>{"#" + hashtag}</li>
           ))}
         </ProjectItemHashtags>
+        <ProjectItemDescription>
+          {descriptions.map((description) => (
+            <li>{"📌 " + description}</li>
+          ))}
+        </ProjectItemDescription>
         <ProjectLink href={projectLink} target="_blank">
           &#8594; 해당 프로젝트로 이동
         </ProjectLink>

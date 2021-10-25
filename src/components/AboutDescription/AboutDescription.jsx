@@ -1,7 +1,7 @@
 import React from "react";
 
 import PersonalDescription from "../PersonalDescription/PersonalDescription";
-import CareerDescription from "../CareerDesciption/CareerDescription";
+import CareerDescription from "../CareerDescription/CareerDescription";
 import TechStack from "../TechStack/TechStack";
 
 import {

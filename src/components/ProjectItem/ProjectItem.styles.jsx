@@ -20,12 +20,25 @@ export const ProjectItemDescriptionContainer = styled.div`
   width: 30vw;
 `;
 
-export const ProjectItemTitle = styled.p`
-  font-size: 36px;
+export const ProjectItemHeading = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const ProjectItemDescription = styled.p`
-  font-size: 24px;
+export const ProjectItemTitle = styled.p`
+  font-size: 36px;
+  margin-bottom: 12px;
+`;
+
+export const ProjectItemPeriod = styled.p`
+  font-size: 18px;
+`;
+
+export const ProjectItemDescription = styled.ul`
+  font-size: 22px;
 `;
 
 export const ProjectItemHashtags = styled.ul`

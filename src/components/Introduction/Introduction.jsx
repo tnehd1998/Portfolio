@@ -6,24 +6,24 @@ import {
 
 const Introduction = () => {
   const [describe, setDescribe] = useState(1);
-  const [describeText, setDescibeText] = useState("꿈꾸는");
+  const [describeText, setDescribeText] = useState("꿈꾸는");
 
   const changeDescribe = useCallback(() => {
     switch (describe) {
       case 1:
-        setDescibeText("노력하는");
+        setDescribeText("노력하는");
         setDescribe(2);
         break;
       case 2:
-        setDescibeText("즐기는");
+        setDescribeText("즐기는");
         setDescribe(3);
         break;
       case 3:
-        setDescibeText("발전하는");
+        setDescribeText("발전하는");
         setDescribe(4);
         break;
       case 4:
-        setDescibeText("꿈꾸는");
+        setDescribeText("꿈꾸는");
         setDescribe(1);
         break;
       default:
@@ -37,6 +37,7 @@ const Introduction = () => {
       clearTimeout(timer);
     };
   }, [changeDescribe]);
+
   return (
     <IntroductionContent>
       <IntroductionText>
