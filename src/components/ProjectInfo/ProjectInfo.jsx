@@ -5,8 +5,6 @@ import {
   ProjectMainTitle,
   ProjectTitle,
 } from "./ProjectInfo.styles.jsx";
-import Youtube from "../../assets/images/project-item-img/youtubeimg.png";
-import Portfolio from "../../assets/images/project-item-img/portfolioimg.png";
 
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
 
@@ -16,7 +14,9 @@ const ProjectInfo = () => {
       <ProjectMainTitle>진행한 프로젝트</ProjectMainTitle>
       <ProjectTitle>개인 프로젝트</ProjectTitle>
       <ProjectItem
-        imageUrl={Youtube}
+        imageUrl={
+          "https://user-images.githubusercontent.com/72953316/139514867-c7b003a9-220c-4132-bb5c-46a6335ef331.png"
+        }
         title={"YouTube 클론 프로젝트"}
         period={"21.10.14 ~ 현재 진행중"}
         descriptions={[
@@ -27,7 +27,9 @@ const ProjectInfo = () => {
         hashtags={["YouTube", "개인", "재미", "클론"]}
       />
       <ProjectItem
-        imageUrl={Portfolio}
+        imageUrl={
+          "https://user-images.githubusercontent.com/72953316/139514890-746c31f4-9219-43b1-93e5-3b8f6f967b15.png"
+        }
         title={"개인 포트폴리오"}
         period={"21.10.06 ~ 현재 진행중"}
         descriptions={[

@@ -8,7 +8,6 @@ import {
   FaceImage,
   FaceDescription,
 } from "./PersonalDescription.styles.jsx";
-import Face from "../../assets/images/profile.jpeg";
 
 const PersonalDescription = () => {
   return (
@@ -30,7 +29,12 @@ const PersonalDescription = () => {
         </DescriptionComment>
       </CommentContainer>
       <FaceAndName>
-        <FaceImage src={Face} alt="Face" />
+        <FaceImage
+          src={
+            "https://user-images.githubusercontent.com/72953316/139514536-30a9a42d-e77f-4912-b7b0-b591ad362e91.jpeg"
+          }
+          alt="Face"
+        />
         <FaceDescription>Billy the Coder</FaceDescription>
       </FaceAndName>
     </DescriptionContainer>

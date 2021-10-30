@@ -9,14 +9,17 @@ import {
   ContactLinkContainer,
   ContactLinkIcon,
 } from "./ContactInfo.styles.jsx";
-import Face from "../../assets/images/profile.jpeg";
 
 const ContactInfo = () => {
   return (
     <ContactInfoContainer>
       <ContactBackground>
         <ContactTitle>✉️ Contact Me ✉️</ContactTitle>
-        <FaceImage src={Face} />
+        <FaceImage
+          src={
+            "https://user-images.githubusercontent.com/72953316/139514536-30a9a42d-e77f-4912-b7b0-b591ad362e91.jpeg"
+          }
+        />
         <ContactInfoDescription>이름 : 이수동</ContactInfoDescription>
         <ContactInfoDescription>
           이메일 : tnehd1998@naver.com

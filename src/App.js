@@ -8,7 +8,6 @@ import {
 
 import "./App.css";
 import styled from "styled-components";
-import backgroundImage from "./assets/images/background.png";
 
 import Header from "./components/Header/Header";
 import AboutPage from "./pages/AboutPage/AboutPage";
@@ -18,7 +17,7 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 
 const AppFormat = styled.div`
   font-family: "Jua", sans-serif;
-  background: url(${backgroundImage});
+  background: url("https://user-images.githubusercontent.com/72953316/139514327-6e8fecfa-b952-4e74-86a4-4c2b36296b4b.png");
   background-repeat: no-repeat;
   background-size: cover;
 `;

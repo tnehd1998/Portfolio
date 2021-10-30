@@ -7,7 +7,6 @@ import {
   NavMenuList,
   NavMenuItem,
 } from "./Header.styles.jsx";
-import Logo from "../../assets/images/website-logo.png";
 
 const Header = () => {
   const [bgTransparent, setBgTransparent] = useState(true);
@@ -34,7 +33,12 @@ const Header = () => {
   return (
     <WebsiteHeader bgTransparent={bgTransparent}>
       <HeaderLink to="/">
-        <WebsiteLogo src={Logo} bgTransparent={bgTransparent} />
+        <WebsiteLogo
+          src={
+            "https://user-images.githubusercontent.com/72953316/139514379-7e609f37-9fd7-4073-af26-4d96c0efdfe1.png"
+          }
+          bgTransparent={bgTransparent}
+        />
       </HeaderLink>
       <NavMenuList bgTransparent={bgTransparent}>
         <HeaderLink to="/about" onClick={moveScrolltoDefault}>
