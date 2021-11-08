@@ -39,6 +39,12 @@ export const WebsiteLogo = styled.img`
       transform: scale(1);
     }
   }
+
+  @media (max-width: 768px) {
+    width: 3rem;
+    height: 3rem;
+    padding-right: 1rem;
+  }
 `;
 
 export const NavMenuList = styled.ul`
@@ -59,5 +65,9 @@ export const NavMenuItem = styled.li`
 
   &:hover {
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
   }
 `;

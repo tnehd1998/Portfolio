@@ -16,4 +16,12 @@ export const TechStackItems = styled.ul`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 4rem;
   margin: 7rem 0;
+
+  @media (max-width: 1150px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;

@@ -8,6 +8,10 @@ export const CareerItemContainer = styled.li`
   padding: 10px;
   padding-right: 300px;
   margin: 1rem 0;
+
+  @media (max-width: 768px) {
+    width: 10vw;
+  }
 `;
 
 export const CareerItemImage = styled.img`
@@ -24,9 +28,10 @@ export const CareerItemDescriptionContainer = styled.div`
 `;
 
 export const CareerItemTitle = styled.p`
-  font-size: 24px;
+  font-size: 1.5em;
+  width: 10em;
 `;
 
 export const CareerItemPeriod = styled.p`
-  font-size: 18px;
+  font-size: 1.125em;
 `;

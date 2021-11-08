@@ -28,4 +28,8 @@ export const IntroductionText = styled.h1`
       opacity: 0;
     }
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.5em;
+  }
 `;

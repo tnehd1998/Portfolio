@@ -24,7 +24,7 @@ const PersonalDescription = () => {
           꾸준함의 중요성을 잘 알기 때문에 🌱1일 1커밋 운동🌱을 하고 있습니다.
         </DescriptionComment>
         <DescriptionComment>
-          무작정 작동하는 코드보다 효율적🧮이고 클린한🧹 코드를 짜기위해 항상
+          무작정 작동하는 코드보다 효율적🧮이고 클린한🧹코드를 짜기위해 항상
           고민하고 있습니다.
         </DescriptionComment>
       </CommentContainer>

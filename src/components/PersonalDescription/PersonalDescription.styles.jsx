@@ -5,6 +5,17 @@ export const DescriptionContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 80vh;
+
+  @media (max-width: 1150px) {
+    height: 70vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 8em;
+    text-align: center;
+    height: 60vh;
+  }
 `;
 
 export const CommentContainer = styled.div`
@@ -12,10 +23,26 @@ export const CommentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  @media (max-width: 1150px) {
+    height: 50vh;
+  }
+
+  @media (max-width: 768px) {
+    height: 40vh;
+  }
 `;
 
 export const DescriptionComment = styled.p`
-  font-size: 24px;
+  font-size: 1.5em;
+
+  @media (max-width: 1150px) {
+    font-size: 1em;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+  }
 `;
 
 export const FaceAndName = styled.div`
@@ -34,12 +61,22 @@ export const FaceAndName = styled.div`
       55px 0 #48b;
   background-size: 110px 200px;
   background-repeat: repeat-x;
+
+  @media (max-width: 1150px) {
+    width: 15rem;
+    height: 15rem;
+  }
 `;
 
 export const FaceImage = styled.img`
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+
+  @media (max-width: 1150px) {
+    width: 10rem;
+    height: 10rem;
+  }
 `;
 
 export const FaceDescription = styled.p`
