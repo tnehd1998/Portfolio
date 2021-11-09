@@ -15,6 +15,7 @@ export const DescriptionContainer = styled.div`
     margin-bottom: 8em;
     text-align: center;
     height: 60vh;
+    margin-top: 3em;
   }
 `;
 

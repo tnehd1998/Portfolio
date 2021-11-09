@@ -11,9 +11,3 @@ export const ProjectMainTitle = styled.p`
   font-size: 32px;
   text-align: center;
 `;
-
-export const ProjectTitle = styled.p`
-  font-size: 32px;
-  margin-left: 12rem;
-  margin-top: 5rem;
-`;
