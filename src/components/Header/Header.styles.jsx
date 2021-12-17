@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const HeaderLink = styled(Link)`
   box-sizing: border-box;
   text-decoration: none;
-  color: black;
+  color: ${(props) => props.theme.textColor};
+  transition: color 0.5s linear;
 `;
 
 export const WebsiteHeader = styled.div`
@@ -64,7 +65,7 @@ export const NavMenuItem = styled.li`
   background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
 
   &:hover {
-    color: white;
+    color: grey;
   }
 
   @media (max-width: 768px) {

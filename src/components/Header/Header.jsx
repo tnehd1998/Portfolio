@@ -8,7 +8,7 @@ import {
   NavMenuItem,
 } from "./Header.styles.jsx";
 
-const Header = () => {
+const Header = ({ currentTheme, toggleTheme }) => {
   const [bgTransparent, setBgTransparent] = useState(true);
 
   const calculateHeightY = () => {
@@ -50,6 +50,17 @@ const Header = () => {
         <HeaderLink to="/contact">
           <NavMenuItem bgTransparent={bgTransparent}>Contact</NavMenuItem>
         </HeaderLink>
+        <h1 onClick={() => toggleTheme((theme) => !theme)}>
+          {currentTheme ? (
+            <i class="fa fa-sun-o" aria-hidden="true">
+              Light Mode
+            </i>
+          ) : (
+            <i class="fa fa-moon-o" aria-hidden="true">
+              Dark Mode
+            </i>
+          )}
+        </h1>
       </NavMenuList>
     </WebsiteHeader>
   );

@@ -53,15 +53,8 @@ export const FaceAndName = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
   border-radius: 24px;
-  background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0,
-    radial-gradient(circle closest-side, #ffffff 53%, rgba(255, 255, 255, 0) 0)
-      0 0,
-    radial-gradient(circle closest-side, #ffffff 50%, rgba(255, 255, 255, 0) 0)
-      55px 0 #48b;
-  background-size: 110px 200px;
-  background-repeat: repeat-x;
+  border: 2px solid ${(props) => props.theme.textColor};
 
   @media (max-width: 1150px) {
     width: 15rem;

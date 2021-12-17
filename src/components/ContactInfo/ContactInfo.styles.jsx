@@ -12,7 +12,7 @@ export const ContactBackground = styled.div`
   width: 26em;
   height: 26em;
   border-radius: 25%;
-  background-color: white;
+  border: 1px solid ${(props) => props.theme.textColor};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +90,8 @@ export const ContactLinkContainer = styled.div`
 
 export const ContactLinkIcon = styled.a`
   font-size: 2.5em;
-  color: ${(props) => (props.item === "github" ? "black" : "#0D65C2")};
+  color: ${(props) =>
+    props.item === "github" ? props.theme.textColor : "#0D65C2"};
 
   &:hover {
     transform: scale(1.2);
