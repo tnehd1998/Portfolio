@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CareerItemContainer = styled.li`
   width: 50vw;
   display: flex;
-  border: 5px solid white;
+  border: 3px solid ${(props) => props.theme.textColor};
   border-radius: 10px;
   padding: 10px;
   padding-right: 300px;
