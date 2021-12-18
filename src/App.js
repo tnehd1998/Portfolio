@@ -21,9 +21,6 @@ import ThemeButton from "./components/ThemeButton/ThemeButton";
 
 const AppFormat = styled.div`
   font-family: "Jua", sans-serif;
-  /* background: url("https://user-images.githubusercontent.com/72953316/139514327-6e8fecfa-b952-4e74-86a4-4c2b36296b4b.png");
-  background-repeat: no-repeat;
-  background-size: cover; */
   background: ${(props) => props.theme.bgColor};
   color: ${(props) => props.theme.textColor};
   transition: color 0.5s linear;
