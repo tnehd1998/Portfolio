@@ -17,6 +17,7 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./theme";
+import ThemeButton from "./components/ThemeButton/ThemeButton";
 
 const AppFormat = styled.div`
   font-family: "Jua", sans-serif;
@@ -34,7 +35,11 @@ const App = () => {
     <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
       <Router>
         <AppFormat>
-          <Header currentTheme={isLightTheme} toggleTheme={setIsLightTheme} />
+          <Header />
+          <ThemeButton
+            currentTheme={isLightTheme}
+            toggleTheme={setIsLightTheme}
+          />
           <Switch>
             <Route exact path="/" component={MainPage} />
             <Route exact path="/about" component={AboutPage} />
