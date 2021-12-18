@@ -103,11 +103,11 @@ export const ProjectItemHashtags = styled.ul`
 
 export const ProjectLink = styled.a`
   text-decoration: none;
-  color: black;
+  color: ${(props) => props.theme.textColor};
   font-size: 1.125em;
 
   &:hover {
-    color: white;
+    color: ${(props) => props.theme.headerColor};
   }
 
   @media (max-width: 1150px) {
