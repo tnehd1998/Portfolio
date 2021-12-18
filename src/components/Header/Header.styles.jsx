@@ -11,7 +11,8 @@ export const HeaderLink = styled(Link)`
 export const WebsiteHeader = styled.div`
   width: 100%;
   display: flex;
-  background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
+  background: ${(props) =>
+    props.bgTransparent ? "transparent" : props.theme.headerColor};
   opacity: ${(props) => (props.bgTransparent ? 1 : 0.9)};
   position: fixed;
   justify-content: space-between;
@@ -24,7 +25,8 @@ export const WebsiteLogo = styled.img`
   height: 4rem;
   padding-left: 2rem;
   cursor: pointer;
-  background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
+  background: ${(props) =>
+    props.bgTransparent ? "transparent" : props.theme.headerColor};
 
   &:hover {
     animation: rotatingAnimation 1s infinite;
@@ -54,7 +56,8 @@ export const NavMenuList = styled.ul`
   justify-content: center;
   align-items: center;
   padding-right: 2rem;
-  background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
+  background: ${(props) =>
+    props.bgTransparent ? "transparent" : props.theme.headerColor};
 `;
 
 export const NavMenuItem = styled.li`
@@ -62,7 +65,8 @@ export const NavMenuItem = styled.li`
   font-size: 1.5rem;
   padding: 0rem 1rem;
   cursor: pointer;
-  background: ${(props) => (props.bgTransparent ? "transparent" : "#BAEAE1")};
+  background: ${(props) =>
+    props.bgTransparent ? "transparent" : props.theme.headerColor};
 
   &:hover {
     color: grey;
