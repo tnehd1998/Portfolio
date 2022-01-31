@@ -14,16 +14,20 @@ const PersonalDescription = () => {
     <DescriptionContainer>
       <CommentContainer>
         <DescriptionComment>
-          개발과 야구를 사랑하는 🧑🏻‍💻프론트엔드 개발자🧑🏻‍💻 이수동입니다.
+          더 나은 삶을 위해 고민하는 🧑🏻‍💻프론트엔드 개발자🧑🏻‍💻 이수동입니다.
         </DescriptionComment>
         <DescriptionComment>
-          개발을 잘하는 개발자보다 ⏳꾸준한 개발자⏳가 되기 위해 노력중입니다.
+          개발자의 입장이 아닌 사용자의 입장으로써 정말 필요로 하는 기능과
+          프로그램을 1순위로 두고 개발을 하고 있습니다.
         </DescriptionComment>
         <DescriptionComment>
-          꾸준함의 중요성을 잘 알기 때문에 🌱1일 1커밋 운동🌱을 하고 있습니다.
+          꾸준함과 성장의 연관성을 잘 알기 때문에 개인 프로젝트를 통해 새로운
+          기술을 접해보며 성장하고 있습니다.
         </DescriptionComment>
         <DescriptionComment>
-          무작정 작동하는 코드보다 🧹클린코드🧹를 지향하고 있습니다.
+          아름다운 사람이 지나간 자리는 지나간 자리도 아름답다는 말을 인상깊게
+          새겨들어, 코드를 짠 후 항상 리팩토링 과정을 통해 언제든지 확장할 수
+          있도록 유지보수하고 있습니다.
         </DescriptionComment>
       </CommentContainer>
       <FaceAndName>
