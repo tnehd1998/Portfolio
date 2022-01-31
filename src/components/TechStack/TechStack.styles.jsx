@@ -4,24 +4,16 @@ export const TechStackContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem;
 `;
 
 export const TechStackTitle = styled.p`
-  font-size: 24px;
+  font-size: 3vw;
 `;
 
 export const TechStackItems = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 4rem;
-  margin: 7rem 0;
-
-  @media (max-width: 1150px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
+  display: flex;
+  width: 80vw;
+  margin: 6vh 0;
+  justify-content: center;
+  align-items: center;
 `;

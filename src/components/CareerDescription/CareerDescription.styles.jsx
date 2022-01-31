@@ -5,5 +5,4 @@ export const CareerDescriptionContainer = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
 `;

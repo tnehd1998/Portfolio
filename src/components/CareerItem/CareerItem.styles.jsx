@@ -1,22 +1,16 @@
 import styled from "styled-components";
 
 export const CareerItemContainer = styled.li`
-  width: 50vw;
+  width: 80vw;
   display: flex;
   border: 3px solid ${(props) => props.theme.textColor};
   border-radius: 10px;
   padding: 10px;
-  padding-right: 300px;
-  margin: 1rem 0;
-
-  @media (max-width: 768px) {
-    width: 10vw;
-  }
 `;
 
 export const CareerItemImage = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   margin-right: 30px;
 `;
@@ -28,10 +22,9 @@ export const CareerItemDescriptionContainer = styled.div`
 `;
 
 export const CareerItemTitle = styled.p`
-  font-size: 1.5em;
-  width: 10em;
+  font-size: 3vw;
 `;
 
 export const CareerItemPeriod = styled.p`
-  font-size: 1.125em;
+  font-size: 2vw;
 `;

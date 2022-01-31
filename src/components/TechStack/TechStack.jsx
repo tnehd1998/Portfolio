@@ -9,31 +9,31 @@ import TechStackItem from "../TechStackItem/TechStackItem";
 const TechStack = () => {
   return (
     <TechStackContainer>
-      <TechStackTitle>Language</TechStackTitle>
+      <TechStackTitle>사용 언어</TechStackTitle>
       <TechStackItems>
         <TechStackItem
           name={"JavaScript"}
           imageUrl={
             "https://user-images.githubusercontent.com/72953316/139514668-daf638fd-d47f-44f8-b8be-59978a9d5623.png"
           }
-          level={75}
+          level={85}
         />
         <TechStackItem
           name={"TypeScript"}
           imageUrl={
             "https://user-images.githubusercontent.com/72953316/139514680-fb2aa67b-f663-4061-85be-6af4a48d5c1e.png"
           }
-          level={60}
+          level={65}
         />
       </TechStackItems>
-      <TechStackTitle>Frontend</TechStackTitle>
+      <TechStackTitle>사용 기술</TechStackTitle>
       <TechStackItems>
         <TechStackItem
           name={"React"}
           imageUrl={
             "https://user-images.githubusercontent.com/72953316/139514692-a0d70e24-d962-40f1-b1e3-dfe64eaec2e0.png"
           }
-          level={75}
+          level={80}
         />
         <TechStackItem
           name={"Recoil"}
@@ -47,7 +47,7 @@ const TechStack = () => {
           imageUrl={
             "https://user-images.githubusercontent.com/72953316/139514655-8c2c65a0-4839-4285-8b8c-7f9cf3922823.png"
           }
-          level={70}
+          level={75}
         />
         <TechStackItem
           name={"React-query"}
@@ -64,7 +64,24 @@ const TechStack = () => {
           level={60}
         />
       </TechStackItems>
-      <TechStackTitle>Developer Tools</TechStackTitle>
+      <TechStackTitle>공부중인 기술</TechStackTitle>
+      <TechStackItems>
+        <TechStackItem
+          name={"GraphQL"}
+          imageUrl={
+            "https://user-images.githubusercontent.com/72953316/139514754-6095ae9a-e430-4721-9ad6-d79617cc7303.png"
+          }
+          level={45}
+        />
+        <TechStackItem
+          name={"NextJS"}
+          imageUrl={
+            "https://user-images.githubusercontent.com/72953316/151731966-14852282-762a-470a-8502-74f778b2c1bb.png"
+          }
+          level={25}
+        />
+      </TechStackItems>
+      <TechStackTitle>개발자 도구</TechStackTitle>
       <TechStackItems>
         <TechStackItem
           name={"Git"}
@@ -78,7 +95,7 @@ const TechStack = () => {
           imageUrl={
             "https://user-images.githubusercontent.com/72953316/139514830-219b9369-2ec9-48fe-947b-ab08d4f324e0.png"
           }
-          level={60}
+          level={75}
         />
       </TechStackItems>
     </TechStackContainer>

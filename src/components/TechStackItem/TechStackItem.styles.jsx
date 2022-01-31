@@ -5,21 +5,22 @@ export const Content = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 1em;
 `;
 
 export const LogoImage = styled.img`
-  width: 6rem;
-  height: 6rem;
+  width: 10vw;
+  height: 10vw;
 `;
 
 export const TechStackItemTitle = styled.p`
   font-size: 16px;
-  margin: 2rem 0;
+  margin: 2vh 0;
 `;
 
 export const TechStackItemLevel = styled.p`
   font-size: 12px;
-  margin-top: 1rem;
+  margin-top: 1vh;
 `;
 
 export const SkillBar = styled.div`
@@ -34,5 +35,11 @@ export const SkillBarRange = styled.div`
   height: 5px;
   border-radius: 2px 0px 0px 2px;
   background-color: ${(props) =>
-    props.level > 70 ? "green" : props.level > 40 ? "yellow" : "red"};
+    props.level >= 75
+      ? "darkgreen"
+      : props.level >= 60
+      ? "greenyellow"
+      : props.level >= 35
+      ? "yellow"
+      : "red"};
 `;
