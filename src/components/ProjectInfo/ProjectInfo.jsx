@@ -6,29 +6,28 @@ import {
 } from "./ProjectInfo.styles.jsx";
 
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import MLBImage from "../../images/mlb.png";
+import PortfolioImage from "../../images/portfolio.png";
+import YoutubeImage from "../../images/youtube.png";
 
 const ProjectInfo = () => {
   return (
     <ProjectPageContainer>
       <ProjectMainTitle>진행한 프로젝트</ProjectMainTitle>
       <ProjectItem
-        imageUrl={
-          "https://user-images.githubusercontent.com/72953316/139514867-c7b003a9-220c-4132-bb5c-46a6335ef331.png"
-        }
-        title={"YouTube 클론 프로젝트"}
-        period={"21.10.14 ~ 현재 진행중"}
+        imageUrl={MLBImage}
+        title={"MLB 프로젝트"}
+        period={"21.12.19 ~ 현재 진행중"}
         descriptions={[
-          "YouTube REST API 사용 연습",
-          "자주 사용하는 YouTube의 기능을 그대로 따라서 만들어본 개인 프로젝트",
+          "메이저리그를 소개해 주는 사이트",
+          "많은 사람들이 MLB를 즐겼으면 하는 마음에 시작하게된 개인 프로젝트",
         ]}
-        projectLink={"https://github.com/tnehd1998/Youtube"}
-        hashtags={["YouTube", "개인", "재미", "클론"]}
+        projectLink={"https://github.com/tnehd1998/MLB"}
+        hashtags={["MLB", "취미", "개인", "팬 페이지"]}
       />
       <ProjectItem
-        imageUrl={
-          "https://user-images.githubusercontent.com/72953316/139514890-746c31f4-9219-43b1-93e5-3b8f6f967b15.png"
-        }
-        title={"자기소개용 포트폴리오"}
+        imageUrl={PortfolioImage}
+        title={"자기소개 포트폴리오"}
         period={"21.10.06 ~ 현재 진행중"}
         descriptions={[
           "직접 만들어본 자기 소개용 첫 개인 프로젝트",
@@ -36,6 +35,17 @@ const ProjectInfo = () => {
         ]}
         projectLink={"https://github.com/tnehd1998/Portfolio"}
         hashtags={["첫 프로젝트", "자기소개", "개인", "포트폴리오"]}
+      />
+      <ProjectItem
+        imageUrl={YoutubeImage}
+        title={"YouTube 클론 프로젝트"}
+        period={"21.10.14 ~ 21.10.29"}
+        descriptions={[
+          "YouTube REST API 사용 연습",
+          "자주 사용하는 YouTube의 기능을 그대로 따라서 만들어본 개인 프로젝트",
+        ]}
+        projectLink={"https://github.com/tnehd1998/Youtube"}
+        hashtags={["YouTube", "개인", "재미", "클론"]}
       />
     </ProjectPageContainer>
   );
