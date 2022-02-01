@@ -16,4 +16,5 @@ export const TechStackItems = styled.ul`
   margin: 6vh 0;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `;
