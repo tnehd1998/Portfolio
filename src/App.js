@@ -6,8 +6,8 @@ import {
   Switch,
 } from "react-router-dom";
 
-import "./styles/GlobalStyles.css";
-import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
 
 import Header from "./components/Header/Header";
 import AboutPage from "./pages/AboutPage/AboutPage";
@@ -20,11 +20,15 @@ import { darkTheme, lightTheme } from "./styles/theme";
 import { useRecoilValue } from "recoil";
 import { isLightThemeState } from "./store/theme";
 
-const AppFormat = styled.div`
-  font-family: "Jua", sans-serif;
-  background: ${(props) => props.theme.bgColor};
-  color: ${(props) => props.theme.textColor};
-  transition: color 0.5s linear;
+const GlobalStyles = createGlobalStyle`
+  ${reset}
+
+  body{
+    font-family: "Jua", sans-serif;
+    background: ${(props) => props.theme.bgColor};
+    color: ${(props) => props.theme.textColor};
+    transition: color 0.5s linear;
+  }
 `;
 
 const App = () => {
@@ -33,16 +37,15 @@ const App = () => {
   return (
     <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
       <Router>
-        <AppFormat>
-          <Header />
-          <Switch>
-            <Route exact path="/" component={MainPage} />
-            <Route exact path="/about" component={AboutPage} />
-            <Route exact path="/projects" component={ProjectPage} />
-            <Route exact path="/contact" component={ContactPage} />
-            <Redirect from="*" to="/" />
-          </Switch>
-        </AppFormat>
+        <GlobalStyles />
+        <Header />
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/projects" component={ProjectPage} />
+          <Route exact path="/contact" component={ContactPage} />
+          <Redirect from="*" to="/" />
+        </Switch>
       </Router>
     </ThemeProvider>
   );
