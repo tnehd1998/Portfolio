@@ -1,16 +1,12 @@
 import React from "react";
-import {
-  TechStackContainer,
-  TechStackTitle,
-  TechStackItems,
-} from "./TechStack.styles.jsx";
-import TechStackItem from "../TechStackItem/TechStackItem";
+import { Wrapper, Category, TechStackWrapper } from "./styles.js";
+import TechStackItem from "../TechStack";
 
-const TechStack = () => {
+const TechStackDescription = () => {
   return (
-    <TechStackContainer>
-      <TechStackTitle>사용 언어</TechStackTitle>
-      <TechStackItems>
+    <Wrapper>
+      <Category>사용 언어</Category>
+      <TechStackWrapper>
         <TechStackItem
           name={"JavaScript"}
           imageUrl={
@@ -25,9 +21,9 @@ const TechStack = () => {
           }
           level={65}
         />
-      </TechStackItems>
-      <TechStackTitle>사용 기술</TechStackTitle>
-      <TechStackItems>
+      </TechStackWrapper>
+      <Category>사용 기술</Category>
+      <TechStackWrapper>
         <TechStackItem
           name={"React"}
           imageUrl={
@@ -63,9 +59,9 @@ const TechStack = () => {
           }
           level={60}
         />
-      </TechStackItems>
-      <TechStackTitle>공부중인 기술</TechStackTitle>
-      <TechStackItems>
+      </TechStackWrapper>
+      <Category>공부중인 기술</Category>
+      <TechStackWrapper>
         <TechStackItem
           name={"GraphQL"}
           imageUrl={
@@ -80,9 +76,9 @@ const TechStack = () => {
           }
           level={25}
         />
-      </TechStackItems>
-      <TechStackTitle>개발자 도구</TechStackTitle>
-      <TechStackItems>
+      </TechStackWrapper>
+      <Category>개발자 도구</Category>
+      <TechStackWrapper>
         <TechStackItem
           name={"Git"}
           imageUrl={
@@ -97,9 +93,9 @@ const TechStack = () => {
           }
           level={75}
         />
-      </TechStackItems>
-    </TechStackContainer>
+      </TechStackWrapper>
+    </Wrapper>
   );
 };
 
-export default TechStack;
+export default TechStackDescription;

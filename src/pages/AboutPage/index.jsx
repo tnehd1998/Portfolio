@@ -1,19 +1,19 @@
 import React from "react";
-import CareerDescription from "../../components/CareerDescription/CareerDescription";
-import PersonalDescription from "../../components/PersonalDescription/PersonalDescription";
-import TechStack from "../../components/TechStack/TechStack";
-import { AboutDescriptionContainer, CommentTitle } from "./styles";
+import CareerDescription from "../../components/CareerDescription";
+import PersonalDescription from "../../components/PersonalDescription";
+import TechStackDescription from "../../components/TechStackDescription";
+import { Wrapper, Category } from "./styles";
 
 const AboutPage = () => {
   return (
-    <AboutDescriptionContainer>
-      <CommentTitle>About Me 🧑🏻‍💻</CommentTitle>
+    <Wrapper>
+      <Category>About Me 🧑🏻‍💻</Category>
       <PersonalDescription />
-      <CommentTitle>Career Path</CommentTitle>
+      <Category>Career Path</Category>
       <CareerDescription />
-      <CommentTitle>Tech Stack</CommentTitle>
-      <TechStack />
-    </AboutDescriptionContainer>
+      <Category>Tech Stack</Category>
+      <TechStackDescription />
+    </Wrapper>
   );
 };
 

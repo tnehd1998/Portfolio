@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Content = styled.li`
+export const Wrapper = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,27 +15,15 @@ export const Content = styled.li`
   }
 `;
 
-export const LogoImage = styled.img`
+export const Logo = styled.img`
   width: 10vw;
   height: 10vw;
 `;
 
-export const TechStackItemTitle = styled.p`
+export const Name = styled.p`
   font-size: 1.5vw;
   margin: 2vh 0;
 
-  @media (max-width: 1150px) {
-    font-size: 2vw;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 2vw;
-  }
-`;
-
-export const TechStackItemLevel = styled.p`
-  font-size: 1.5vw;
-  margin-top: 1vh;
   @media (max-width: 1150px) {
     font-size: 2vw;
   }
@@ -81,5 +69,17 @@ export const SkillBarRange = styled.div`
 
   @media (max-width: 768px) {
     height: 3px;
+  }
+`;
+
+export const Level = styled.p`
+  font-size: 1.5vw;
+  margin-top: 1vh;
+  @media (max-width: 1150px) {
+    font-size: 2vw;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2vw;
   }
 `;

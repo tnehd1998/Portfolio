@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CareerDescriptionContainer = styled.ul`
+export const Wrapper = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CareerItemContainer = styled.li`
+export const Wrapper = styled.li`
   width: 80vw;
   display: flex;
   border: 3px solid ${(props) => props.theme.textColor};
@@ -8,23 +8,23 @@ export const CareerItemContainer = styled.li`
   padding: 10px;
 `;
 
-export const CareerItemImage = styled.img`
+export const Logo = styled.img`
   width: 10vw;
   height: 10vw;
   border-radius: 50%;
   margin-right: 30px;
 `;
 
-export const CareerItemDescriptionContainer = styled.div`
+export const DescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 `;
 
-export const CareerItemTitle = styled.p`
+export const Name = styled.p`
   font-size: 3vw;
 `;
 
-export const CareerItemPeriod = styled.p`
+export const Period = styled.p`
   font-size: 2vw;
 `;

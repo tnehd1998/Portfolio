@@ -2,23 +2,23 @@ import React from "react";
 import { useRecoilValue } from "recoil";
 import { careersState } from "../../store/info";
 
-import CareerItem from "../CareerItem/CareerItem";
-import { CareerDescriptionContainer } from "./CareerDescription.styles";
+import Career from "../Career";
+import { Wrapper } from "./styles";
 
 const CareerDescription = () => {
   const careers = useRecoilValue(careersState);
 
   return (
-    <CareerDescriptionContainer>
+    <Wrapper>
       {careers.map((career, index) => (
-        <CareerItem
+        <Career
           key={index}
           imageUrl={career[0]}
-          title={career[1]}
+          name={career[1]}
           period={career[2]}
         />
       ))}
-    </CareerDescriptionContainer>
+    </Wrapper>
   );
 };
 
