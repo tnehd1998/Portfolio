@@ -29,13 +29,13 @@ const ProjectItem = ({
           <ProjectItemPeriod>{period}</ProjectItemPeriod>
         </ProjectItemHeading>
         <ProjectItemHashtags>
-          {hashtags.map((hashtag) => (
-            <li>{"#" + hashtag}</li>
+          {hashtags.map((hashtag, index) => (
+            <li key={index}>{"#" + hashtag}</li>
           ))}
         </ProjectItemHashtags>
         <ProjectItemDescription>
-          {descriptions.map((description) => (
-            <li>{"📌 " + description}</li>
+          {descriptions.map((description, index) => (
+            <li key={index}>{"📌 " + description}</li>
           ))}
         </ProjectItemDescription>
         <ProjectLink href={projectLink} target="_blank">

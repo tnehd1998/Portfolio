@@ -12,7 +12,7 @@ import reset from "styled-reset";
 import Header from "./components/Header/Header";
 import AboutPage from "./pages/AboutPage";
 import MainPage from "./pages/MainPage";
-import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import ProjectPage from "./pages/ProjectPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 
 import { ThemeProvider } from "styled-components";

@@ -1,23 +1,18 @@
 import React from "react";
-
-import {
-  ProjectPageContainer,
-  ProjectMainTitle,
-} from "./ProjectInfo.styles.jsx";
-
-import ProjectItem from "../../components/ProjectItem/ProjectItem";
-
 import { useRecoilValue } from "recoil";
-import { projectsState } from "../../store/project.js";
+import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import { projectsState } from "../../store/project";
+import { ProjectPageContainer, ProjectMainTitle } from "./styles";
 
-const ProjectInfo = () => {
+const ProjectPage = () => {
   const projects = useRecoilValue(projectsState);
 
   return (
     <ProjectPageContainer>
       <ProjectMainTitle>진행한 프로젝트</ProjectMainTitle>
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <ProjectItem
+          key={index}
           imageUrl={project[0]}
           title={project[1]}
           period={project[2]}
@@ -30,4 +25,4 @@ const ProjectInfo = () => {
   );
 };
 
-export default ProjectInfo;
+export default ProjectPage;
