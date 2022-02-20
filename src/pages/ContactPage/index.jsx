@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   ContactInfoContainer,
   ContactBackground,
@@ -8,9 +7,9 @@ import {
   ContactInfoDescription,
   ContactLinkContainer,
   ContactLinkIcon,
-} from "./ContactInfo.styles.jsx";
+} from "./styles";
 
-const ContactInfo = () => {
+const ContactPage = () => {
   return (
     <ContactInfoContainer>
       <ContactBackground>
@@ -45,4 +44,4 @@ const ContactInfo = () => {
   );
 };
 
-export default ContactInfo;
+export default ContactPage;

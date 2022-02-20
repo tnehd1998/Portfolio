@@ -13,7 +13,7 @@ import Header from "./components/Header/Header";
 import AboutPage from "./pages/AboutPage";
 import MainPage from "./pages/MainPage";
 import ProjectPage from "./pages/ProjectPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
+import ContactPage from "./pages/ContactPage";
 
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme";
