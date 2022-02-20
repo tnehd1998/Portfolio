@@ -1,12 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
-import { quotesState } from "../../store/info.js";
-import {
-  IntroductionContent,
-  IntroductionText,
-} from "./Introduction.styles.jsx";
+import { quotesState } from "../../store/info";
+import { IntroductionContent, IntroductionText } from "./styles";
 
-const Introduction = () => {
+const MainPage = () => {
   const quotes = useRecoilValue(quotesState);
   const [currentQuote, setCurrentQuote] = useState(0);
 
@@ -37,4 +34,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default MainPage;

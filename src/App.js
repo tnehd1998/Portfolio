@@ -11,7 +11,7 @@ import reset from "styled-reset";
 
 import Header from "./components/Header/Header";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import MainPage from "./pages/MainPage/MainPage";
+import MainPage from "./pages/MainPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 
@@ -35,8 +35,8 @@ const App = () => {
   const isLightTheme = useRecoilValue(isLightThemeState);
 
   return (
-    <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
-      <Router>
+    <Router>
+      <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Header />
         <Switch>
@@ -46,8 +46,8 @@ const App = () => {
           <Route exact path="/contact" component={ContactPage} />
           <Redirect from="*" to="/" />
         </Switch>
-      </Router>
-    </ThemeProvider>
+      </ThemeProvider>
+    </Router>
   );
 };
 
