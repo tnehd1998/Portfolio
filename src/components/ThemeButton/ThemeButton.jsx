@@ -1,17 +1,21 @@
 import React from "react";
+import { useRecoilState } from "recoil";
+import { isLightThemeState } from "../../store/theme";
 import { ThemeButtonContainer } from "./ThemeButton.styled";
 
-const ThemeButton = ({ currentTheme, toggleTheme }) => {
+const ThemeButton = () => {
+  const [isLightTheme, setIsLightTheme] = useRecoilState(isLightThemeState);
+
+  const onClickToggleTheme = () => {
+    setIsLightTheme((currentTheme) => !currentTheme);
+  };
+
   return (
     <ThemeButtonContainer
-      onClick={() => toggleTheme((theme) => !theme)}
-      currentTheme={currentTheme}
+      onClick={onClickToggleTheme}
+      isLightTheme={isLightTheme}
     >
-      {currentTheme ? (
-        <i className="fa fa-sun-o" aria-hidden="true"></i>
-      ) : (
-        <i className="fa fa-moon-o" aria-hidden="true"></i>
-      )}
+      {isLightTheme ? "🌞" : "🌙"}
     </ThemeButtonContainer>
   );
 };

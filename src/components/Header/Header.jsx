@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ThemeButton from "../ThemeButton/ThemeButton.jsx";
 
 import {
   HeaderLink,
@@ -50,6 +51,7 @@ const Header = () => {
         <HeaderLink to="/contact">
           <NavMenuItem bgTransparent={bgTransparent}>Contact</NavMenuItem>
         </HeaderLink>
+        <ThemeButton />
       </NavMenuList>
     </WebsiteHeader>
   );

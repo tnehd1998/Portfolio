@@ -17,8 +17,7 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme";
-import ThemeButton from "./components/ThemeButton/ThemeButton";
-import { useRecoilState } from "recoil";
+import { useRecoilValue } from "recoil";
 import { isLightThemeState } from "./store/theme";
 
 const AppFormat = styled.div`
@@ -29,17 +28,13 @@ const AppFormat = styled.div`
 `;
 
 const App = () => {
-  const [isLightTheme, setIsLightTheme] = useRecoilState(isLightThemeState);
+  const isLightTheme = useRecoilValue(isLightThemeState);
 
   return (
     <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
       <Router>
         <AppFormat>
           <Header />
-          <ThemeButton
-            currentTheme={isLightTheme}
-            toggleTheme={setIsLightTheme}
-          />
           <Switch>
             <Route exact path="/" component={MainPage} />
             <Route exact path="/about" component={AboutPage} />
