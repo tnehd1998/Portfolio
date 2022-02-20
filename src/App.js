@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Route,
   HashRouter as Router,
@@ -18,6 +18,8 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme";
 import ThemeButton from "./components/ThemeButton/ThemeButton";
+import { useRecoilState } from "recoil";
+import { isLightThemeState } from "./store/theme";
 
 const AppFormat = styled.div`
   font-family: "Jua", sans-serif;
@@ -27,7 +29,8 @@ const AppFormat = styled.div`
 `;
 
 const App = () => {
-  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isLightTheme, setIsLightTheme] = useRecoilState(isLightThemeState);
+
   return (
     <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
       <Router>
