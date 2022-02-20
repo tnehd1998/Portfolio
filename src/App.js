@@ -10,7 +10,7 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
 import Header from "./components/Header/Header";
-import AboutPage from "./pages/AboutPage/AboutPage";
+import AboutPage from "./pages/AboutPage";
 import MainPage from "./pages/MainPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import ContactPage from "./pages/ContactPage/ContactPage";

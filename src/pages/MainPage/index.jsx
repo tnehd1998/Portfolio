@@ -14,16 +14,16 @@ const MainPage = () => {
     return setCurrentQuote((current) => current + 1);
   }, [currentQuote]);
 
+  const currentText = (row) => {
+    return quotes[currentQuote][row - 1];
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => changeQuote(), 5000);
     return () => {
       clearTimeout(timer);
     };
   }, [changeQuote]);
-
-  const currentText = (row) => {
-    return quotes[currentQuote][row - 1];
-  };
 
   return (
     <IntroductionContent>

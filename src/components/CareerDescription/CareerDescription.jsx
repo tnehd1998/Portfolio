@@ -10,8 +10,13 @@ const CareerDescription = () => {
 
   return (
     <CareerDescriptionContainer>
-      {careers.map((career) => (
-        <CareerItem imageUrl={career[0]} title={career[1]} period={career[2]} />
+      {careers.map((career, index) => (
+        <CareerItem
+          key={index}
+          imageUrl={career[0]}
+          title={career[1]}
+          period={career[2]}
+        />
       ))}
     </CareerDescriptionContainer>
   );
