@@ -1,6 +1,6 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
-import { quotesState } from "../../store/info.js";
+import { introductionsState } from "../../store/info.js";
 
 import {
   DescriptionContainer,
@@ -9,7 +9,7 @@ import {
 } from "./PersonalDescription.styles.jsx";
 
 const PersonalDescription = () => {
-  const quotes = useRecoilValue(quotesState);
+  const quotes = useRecoilValue(introductionsState);
 
   const currentQuote = (row) => {
     const currentQuotes = quotes[row - 1];

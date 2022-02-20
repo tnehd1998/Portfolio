@@ -10,6 +10,7 @@ export const CommentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: auto;
 `;
 
 export const DescriptionComment = styled.p`

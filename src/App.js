@@ -22,7 +22,7 @@ import { isLightThemeState } from "./store/theme";
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
-
+  
   body{
     font-family: "Jua", sans-serif;
     background: ${(props) => props.theme.bgColor};

@@ -1,7 +1,7 @@
 import { atom } from "recoil";
 
-export const quotesState = atom({
-  key: "quotesState",
+export const introductionsState = atom({
+  key: "introductionsState",
   default: [
     [
       "더 나은 삶을 위해 고민하는",
