@@ -6,9 +6,9 @@ import {
 } from "./ProjectInfo.styles.jsx";
 
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
-import MLBImage from "../../images/mlb.png";
-import PortfolioImage from "../../images/portfolio.png";
-import YoutubeImage from "../../images/youtube.png";
+import MLBImage from "../../assets/images/mlb.png";
+import PortfolioImage from "../../assets/images/portfolio.png";
+import YoutubeImage from "../../assets/images/youtube.png";
 
 const ProjectInfo = () => {
   return (

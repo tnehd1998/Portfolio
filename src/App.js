@@ -6,7 +6,7 @@ import {
   Switch,
 } from "react-router-dom";
 
-import "./App.css";
+import "./styles/GlobalStyles.css";
 import styled from "styled-components";
 
 import Header from "./components/Header/Header";
@@ -16,7 +16,7 @@ import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 
 import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "./theme";
+import { darkTheme, lightTheme } from "./styles/theme";
 import ThemeButton from "./components/ThemeButton/ThemeButton";
 
 const AppFormat = styled.div`
