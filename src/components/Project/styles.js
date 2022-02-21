@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectItemContainer = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   margin: 5rem 0;
@@ -11,7 +11,7 @@ export const ProjectItemContainer = styled.div`
   }
 `;
 
-export const ProjectItemImage = styled.img`
+export const Image = styled.img`
   width: 50em;
   height: 30em;
 
@@ -26,7 +26,7 @@ export const ProjectItemImage = styled.img`
   }
 `;
 
-export const ProjectItemDescriptionContainer = styled.div`
+export const CommentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -39,17 +39,8 @@ export const ProjectItemDescriptionContainer = styled.div`
   }
 `;
 
-export const ProjectItemHeading = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const ProjectItemTitle = styled.p`
+export const Title = styled.p`
   font-size: 2.25em;
-  margin-bottom: 0.75em;
 
   @media (max-width: 1150px) {
     font-size: 2em;
@@ -60,7 +51,7 @@ export const ProjectItemTitle = styled.p`
   }
 `;
 
-export const ProjectItemPeriod = styled.p`
+export const Period = styled.p`
   font-size: 1.125em;
 
   @media (max-width: 1150px) {
@@ -73,20 +64,7 @@ export const ProjectItemPeriod = styled.p`
   }
 `;
 
-export const ProjectItemDescription = styled.ul`
-  font-size: 1.375em;
-
-  @media (max-width: 1150px) {
-    font-size: 1em;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 0.75em;
-    margin: 1em 0;
-  }
-`;
-
-export const ProjectItemHashtags = styled.ul`
+export const HashtagsWrapper = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +79,20 @@ export const ProjectItemHashtags = styled.ul`
   }
 `;
 
-export const ProjectLink = styled.a`
+export const DescriptionsWrapper = styled.ul`
+  font-size: 1.375em;
+
+  @media (max-width: 1150px) {
+    font-size: 1em;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.75em;
+    margin: 1em 0;
+  }
+`;
+
+export const Link = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.textColor};
   font-size: 1.125em;

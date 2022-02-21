@@ -1,17 +1,17 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
-import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import Project from "../../components/Project";
 import { projectsState } from "../../store/project";
-import { ProjectPageContainer, ProjectMainTitle } from "./styles";
+import { Wrapper, Category } from "./styles";
 
 const ProjectPage = () => {
   const projects = useRecoilValue(projectsState);
 
   return (
-    <ProjectPageContainer>
-      <ProjectMainTitle>진행한 프로젝트</ProjectMainTitle>
+    <Wrapper>
+      <Category>진행한 프로젝트</Category>
       {projects.map((project, index) => (
-        <ProjectItem
+        <Project
           key={index}
           imageUrl={project[0]}
           title={project[1]}
@@ -21,7 +21,7 @@ const ProjectPage = () => {
           hashtags={project[5]}
         />
       ))}
-    </ProjectPageContainer>
+    </Wrapper>
   );
 };
 
