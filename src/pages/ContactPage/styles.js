@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContactInfoContainer = styled.div`
+export const Wrapper = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -8,7 +8,7 @@ export const ContactInfoContainer = styled.div`
   align-items: center;
 `;
 
-export const ContactBackground = styled.div`
+export const ContactWrapper = styled.div`
   width: 26em;
   height: 26em;
   border-radius: 25%;
@@ -29,7 +29,7 @@ export const ContactBackground = styled.div`
   }
 `;
 
-export const ContactTitle = styled.p`
+export const Title = styled.p`
   font-size: 2.6em;
 
   @media (max-width: 1150px) {
@@ -41,7 +41,7 @@ export const ContactTitle = styled.p`
   }
 `;
 
-export const FaceImage = styled.img`
+export const Image = styled.img`
   width: 10em;
   height: 10em;
   border-radius: 50%;
@@ -58,7 +58,7 @@ export const FaceImage = styled.img`
   }
 `;
 
-export const ContactInfoDescription = styled.p`
+export const Description = styled.p`
   font-size: 1.125em;
 
   @media (max-width: 1150px) {
@@ -70,7 +70,7 @@ export const ContactInfoDescription = styled.p`
   }
 `;
 
-export const ContactLinkContainer = styled.div`
+export const ContactLinkWrapper = styled.div`
   display: flex;
   width: 6em;
   justify-content: space-evenly;
@@ -88,7 +88,7 @@ export const ContactLinkContainer = styled.div`
   }
 `;
 
-export const ContactLinkIcon = styled.a`
+export const ContactLink = styled.a`
   font-size: 2.5em;
   color: ${(props) =>
     props.item === "github" ? props.theme.textColor : "#0D65C2"};

@@ -1,7 +1,7 @@
 import React from "react";
 import { useRecoilState } from "recoil";
 import { isLightThemeState } from "../../store/theme";
-import { ThemeButtonContainer } from "./ThemeButton.styled";
+import { ThemeButtonContainer } from "./styles";
 
 const ThemeButton = () => {
   const [isLightTheme, setIsLightTheme] = useRecoilState(isLightThemeState);

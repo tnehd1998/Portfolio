@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ThemeButton from "../ThemeButton/ThemeButton.jsx";
+import ThemeButton from "../ThemeButton";
 
 import {
   HeaderLink,
@@ -7,7 +7,7 @@ import {
   WebsiteLogo,
   NavMenuList,
   NavMenuItem,
-} from "./Header.styles.jsx";
+} from "./styles.js";
 
 const Header = () => {
   const [bgTransparent, setBgTransparent] = useState(true);
