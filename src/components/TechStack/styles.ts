@@ -50,7 +50,7 @@ export const SkillBar = styled.div`
   }
 `;
 
-export const SkillBarRange = styled.div`
+export const SkillBarRange = styled.div<{ level: number }>`
   width: ${(props) => `${props.level}%`};
   height: 7px;
   border-radius: 5px 0px 0px 5px;

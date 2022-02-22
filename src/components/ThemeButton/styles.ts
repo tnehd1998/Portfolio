@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ThemeButtonContainer = styled.div`
+export const ThemeButtonContainer = styled.div<{ isLightTheme: boolean }>`
   cursor: pointer;
   font-size: 18px;
   background-color: ${(props) => (props.isLightTheme ? "white" : "grey")};

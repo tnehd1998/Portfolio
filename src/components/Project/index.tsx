@@ -1,4 +1,4 @@
-import React from "react";
+import { IProject } from "../../types/project.type";
 
 import {
   Wrapper,
@@ -9,7 +9,7 @@ import {
   DescriptionsWrapper,
   Link,
   HashtagsWrapper,
-} from "./styles.js";
+} from "./styles";
 
 const Project = ({
   imageUrl,
@@ -18,7 +18,7 @@ const Project = ({
   descriptions,
   projectLink,
   hashtags,
-}) => {
+}: IProject) => {
   return (
     <Wrapper>
       <Image src={imageUrl} />

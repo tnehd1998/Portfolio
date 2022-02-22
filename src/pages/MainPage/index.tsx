@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
 import { introductionsState } from "../../store/info";
 import { Wrapper, IntroductionText } from "./styles";
@@ -14,8 +14,15 @@ const MainPage = () => {
     return setCurrentIntroduction((current) => current + 1);
   }, [currentIntroduction]);
 
-  const currentRow = (row) => {
-    return introductions[currentIntroduction][row - 1];
+  const currentRow = (row: number) => {
+    switch (row) {
+      case 1:
+        return introductions[currentIntroduction].first;
+      case 2:
+        return introductions[currentIntroduction].second;
+      case 3:
+        return introductions[currentIntroduction].third;
+    }
   };
 
   useEffect(() => {

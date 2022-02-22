@@ -1,5 +1,4 @@
-import React from "react";
-import { Wrapper, Category, TechStackWrapper } from "./styles.js";
+import { Wrapper, Category, TechStackWrapper } from "./styles";
 import TechStackItem from "../TechStack";
 
 const TechStackDescription = () => {

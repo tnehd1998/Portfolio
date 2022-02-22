@@ -7,7 +7,7 @@ import {
   WebsiteLogo,
   NavMenuList,
   NavMenuItem,
-} from "./styles.js";
+} from "./styles";
 
 const Header = () => {
   const [bgTransparent, setBgTransparent] = useState(true);

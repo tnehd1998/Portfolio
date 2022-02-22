@@ -1,4 +1,3 @@
-import React from "react";
 import CareerDescription from "../../components/CareerDescription";
 import PersonalDescription from "../../components/PersonalDescription";
 import TechStackDescription from "../../components/TechStackDescription";

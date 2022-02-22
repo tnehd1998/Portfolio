@@ -8,7 +8,7 @@ export const HeaderLink = styled(Link)`
   transition: color 0.5s linear;
 `;
 
-export const WebsiteHeader = styled.div`
+export const WebsiteHeader = styled.div<{ bgTransparent: boolean }>`
   width: 100%;
   display: flex;
   background: ${(props) =>
@@ -20,7 +20,7 @@ export const WebsiteHeader = styled.div`
   padding: 2rem 0;
 `;
 
-export const WebsiteLogo = styled.img`
+export const WebsiteLogo = styled.img<{ bgTransparent: boolean }>`
   width: 4rem;
   height: 4rem;
   padding-left: 2rem;
@@ -50,7 +50,7 @@ export const WebsiteLogo = styled.img`
   }
 `;
 
-export const NavMenuList = styled.ul`
+export const NavMenuList = styled.ul<{ bgTransparent: boolean }>`
   list-style: none;
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@ export const NavMenuList = styled.ul`
     props.bgTransparent ? "transparent" : props.theme.headerColor};
 `;
 
-export const NavMenuItem = styled.li`
+export const NavMenuItem = styled.li<{ bgTransparent: boolean }>`
   list-style: none;
   font-size: 1.5rem;
   padding: 0rem 1rem;

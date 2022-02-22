@@ -1,4 +1,3 @@
-import React from "react";
 import { useRecoilValue } from "recoil";
 import { careersState } from "../../store/info";
 
@@ -13,9 +12,9 @@ const CareerDescription = () => {
       {careers.map((career, index) => (
         <Career
           key={index}
-          imageUrl={career[0]}
-          name={career[1]}
-          period={career[2]}
+          logo={career.logo}
+          name={career.name}
+          period={career.period}
         />
       ))}
     </Wrapper>

@@ -1,14 +1,7 @@
-import React from "react";
-import {
-  Wrapper,
-  Logo,
-  Name,
-  SkillBar,
-  SkillBarRange,
-  Level,
-} from "./styles.js";
+import { ITechStack } from "../../types/info.type";
+import { Wrapper, Logo, Name, SkillBar, SkillBarRange, Level } from "./styles";
 
-const TechStack = ({ name, imageUrl, level }) => {
+const TechStack = ({ name, imageUrl, level }: ITechStack) => {
   return (
     <Wrapper>
       <Logo src={imageUrl} />

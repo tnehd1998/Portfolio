@@ -13,12 +13,12 @@ const ProjectPage = () => {
       {projects.map((project, index) => (
         <Project
           key={index}
-          imageUrl={project[0]}
-          title={project[1]}
-          period={project[2]}
-          descriptions={project[3]}
-          projectLink={project[4]}
-          hashtags={project[5]}
+          imageUrl={project.imageUrl}
+          title={project.title}
+          period={project.period}
+          descriptions={project.descriptions}
+          projectLink={project.projectLink}
+          hashtags={project.hashtags}
         />
       ))}
     </Wrapper>

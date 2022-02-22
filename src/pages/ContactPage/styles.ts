@@ -88,7 +88,7 @@ export const ContactLinkWrapper = styled.div`
   }
 `;
 
-export const ContactLink = styled.a`
+export const ContactLink = styled.a<{ item: string }>`
   font-size: 2.5em;
   color: ${(props) =>
     props.item === "github" ? props.theme.textColor : "#0D65C2"};
