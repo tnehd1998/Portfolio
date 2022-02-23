@@ -1,4 +1,5 @@
 import { atom } from "recoil";
+import KUNAImage from "../assets/images/kuna.png";
 import MLBImage from "../assets/images/mlb.png";
 import PortfolioImage from "../assets/images/portfolio.png";
 import YoutubeImage from "../assets/images/youtube.png";
@@ -39,6 +40,23 @@ export const projectsState = atom<IProject[]>({
       ],
       projectLink: "https://github.com/tnehd1998/Youtube",
       hashtags: ["YouTube", "개인", "재미", "클론"],
+    },
+  ],
+});
+
+export const teamProjectsState = atom<IProject[]>({
+  key: "teamProjectsState",
+  default: [
+    {
+      imageUrl: KUNAImage,
+      title: "KUNA 쇼핑몰 프로젝트",
+      period: "22.01.05 ~ 22.02.23",
+      descriptions: [
+        "소녀나라를 기반으로 만들어본 쇼핑몰 사이트",
+        "프론트엔드, 벡엔드를 나눠서 처음 진행해본 팀 프로젝트",
+      ],
+      projectLink: "https://github.com/Konkuk-Toy-Project/KUNA-client",
+      hashtags: ["KUNA", "쇼핑", "팀", "성장"],
     },
   ],
 });
