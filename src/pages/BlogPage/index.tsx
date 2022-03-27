@@ -1,23 +1,36 @@
 import { Wrapper } from "./styles";
 import styled from "styled-components";
+import { useRecoilValue } from "recoil";
+import { blogState } from "../../store/blog";
 
-const BlogList = styled.ul`
-  margin-top: 1em;
-  text-align: center;
-`;
-
-const Title = styled.div`
+const Title = styled.p`
   font-size: 4vw;
   text-align: center;
   margin: 2em 0;
 `;
 
+const Description = styled.p`
+  font-size: 2vw;
+  text-align: center;
+  margin: 2em 0;
+`;
+
+const BlogList = styled.ul`
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const Blog = styled.li`
   display: flex;
   border: 2px solid ${(props) => props.theme.textColor};
-  margin: 4em;
-  padding: 2em;
+  margin: 1em;
+  padding: 2em 1em;
   border-radius: 10px;
+  cursor: pointer;
+
   &:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
@@ -26,41 +39,46 @@ const Blog = styled.li`
 
 const Link = styled.a`
   text-decoration: none;
-  font-size: 1.125em;
+  width: 70vw;
   color: ${(props) => props.theme.textColor};
   display: flex;
   justify-content: center;
   align-items: center;
+`;
 
-  @media (max-width: 1150px) {
-    font-size: 1em;
-  }
+const BlogNumber = styled.p`
+  font-size: 3vw;
+  width: 10%;
+`;
 
-  @media (max-width: 768px) {
-    font-size: 0.75em;
-    margin-bottom: 0.75em;
-  }
+const BlogTitle = styled.p`
+  font-size: 1.5vw;
+  width: 40%;
+`;
+
+const BlogComment = styled.p`
+  font-size: 2vw;
+  width: 50%;
 `;
 
 const BlogPage = () => {
+  const blogs = useRecoilValue(blogState);
   return (
     <Wrapper>
-      <Title>인상 깊에 읽은 글</Title>
+      <Title>공유하고 싶은 좋은 글</Title>
+      <Description>
+        🤔스스로 생긴 질문🤔에 대한 🤩답변을 담고 있는 글 목록🤩
+      </Description>
       <BlogList>
-        <Blog>
-          <Link
-            href="https://techblog.woowahan.com/6339/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h1>#1</h1>
-            <h1>Store에서 비동기 통신 분리하기 (feat. React Query)</h1>
-            <h3>
-              상태관리에서 "비동기 데이터 처리를 어떻게 하면 좋을까?" 에 대해
-              고민을 하다가 해답을 찾게 해준 글
-            </h3>
-          </Link>
-        </Blog>
+        {blogs.map((blog) => (
+          <Blog>
+            <Link href={blog.blogLink} target="_blank" rel="noreferrer">
+              <BlogNumber>{`#${blog.blogId}`}</BlogNumber>
+              <BlogTitle>{blog.title}</BlogTitle>
+              <BlogComment>{`"${blog.question}"`}</BlogComment>
+            </Link>
+          </Blog>
+        ))}
       </BlogList>
     </Wrapper>
   );
