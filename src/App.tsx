@@ -19,6 +19,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme";
 import { useRecoilValue } from "recoil";
 import { isLightThemeState } from "./store/theme";
+import BlogPage from "./pages/BlogPage";
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
@@ -43,6 +44,7 @@ const App = () => {
           <Route exact path="/" component={MainPage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/projects" component={ProjectPage} />
+          <Route exact path="/blogs" component={BlogPage} />
           <Route exact path="/contact" component={ContactPage} />
           <Redirect from="*" to="/" />
         </Switch>

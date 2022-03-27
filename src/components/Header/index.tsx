@@ -43,13 +43,16 @@ const Header = () => {
       </HeaderLink>
       <NavMenuList bgTransparent={bgTransparent}>
         <HeaderLink to="/about" onClick={moveScrolltoDefault}>
-          <NavMenuItem bgTransparent={bgTransparent}>About</NavMenuItem>
+          <NavMenuItem bgTransparent={bgTransparent}>ABOUT</NavMenuItem>
         </HeaderLink>
         <HeaderLink to="/projects" onClick={moveScrolltoDefault}>
-          <NavMenuItem bgTransparent={bgTransparent}>Projects</NavMenuItem>
+          <NavMenuItem bgTransparent={bgTransparent}>PROJECT</NavMenuItem>
+        </HeaderLink>
+        <HeaderLink to="/blogs" onClick={moveScrolltoDefault}>
+          <NavMenuItem bgTransparent={bgTransparent}>BLOG</NavMenuItem>
         </HeaderLink>
         <HeaderLink to="/contact">
-          <NavMenuItem bgTransparent={bgTransparent}>Contact</NavMenuItem>
+          <NavMenuItem bgTransparent={bgTransparent}>CONTACT</NavMenuItem>
         </HeaderLink>
         <ThemeButton />
       </NavMenuList>
