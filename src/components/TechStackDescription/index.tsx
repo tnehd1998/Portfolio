@@ -58,6 +58,13 @@ const TechStackDescription = () => {
           }
           level={60}
         />
+        <TechStackItem
+          name={"Storybook"}
+          imageUrl={
+            "https://user-images.githubusercontent.com/72953316/160265579-07b91bbf-ad2a-41cd-ba3c-d82f59abf5eb.svg"
+          }
+          level={60}
+        />
       </TechStackWrapper>
       <Category>공부중인 기술</Category>
       <TechStackWrapper>
@@ -73,7 +80,7 @@ const TechStackDescription = () => {
           imageUrl={
             "https://user-images.githubusercontent.com/72953316/151731966-14852282-762a-470a-8502-74f778b2c1bb.png"
           }
-          level={25}
+          level={50}
         />
       </TechStackWrapper>
       <Category>개발자 도구</Category>
