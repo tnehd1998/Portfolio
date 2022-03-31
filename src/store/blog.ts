@@ -16,5 +16,11 @@ export const blogState = atom<IBlog[]>({
       title: "[React] 클로저와 useState Hooks",
       question: "클로저가 React의 어느 부분에서 활용되고 있을까?",
     },
+    {
+      blogId: 3,
+      blogLink: "https://youtu.be/0-UaleJZOw8",
+      title: "[B1] 상태관리, 이제 Recoil 하세요.",
+      question: "Redux 말고 React스럽게 상태관리를 할 수는 없을까?",
+    },
   ],
 });

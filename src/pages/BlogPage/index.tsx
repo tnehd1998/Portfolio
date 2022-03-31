@@ -28,9 +28,9 @@ const BlogPage = () => {
   const blogs = useRecoilValue(blogState);
   return (
     <Wrapper>
-      <Title>공유하고 싶은 좋은 글</Title>
+      <Title>공유하고 싶은 좋은 글/영상</Title>
       <Description>
-        🤔스스로 생긴 질문🤔에 대한 🤩답변을 담고 있는 글 목록🤩
+        🤔스스로 생긴 질문🤔에 대한 🤩답변을 담고 있는 글/블로그 목록🤩
       </Description>
       <BlogList>
         {blogs.map((blog) => (
