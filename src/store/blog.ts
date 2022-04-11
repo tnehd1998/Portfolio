@@ -29,5 +29,19 @@ export const blogState = atom<IBlog[]>({
       title: "함께 자라기 | 애자일로 가는 길",
       question: "개발자로써 어떻게 하면 제대로 성장할 수 있을까?",
     },
+    {
+      blogId: 5,
+      blogLink:
+        "https://velog.io/@tnehd1998/IT%EC%97%90-%EB%AA%B8%EB%8B%B4%EC%9D%80-%EC%9D%B4%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A7%80%EC%A0%81%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0",
+      title: "IT에 몸담은 이들을 위한 지적생산기술",
+      question: "어떻게 하면 효율적으로 공부를 할 수 있을까?",
+    },
+    {
+      blogId: 6,
+      blogLink:
+        "https://velog.io/@juno7803/Recoil-Recoil-200-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0",
+      title: "[Recoil] Recoil 200% 활용하기",
+      question: "Recoil을 좀 더 확실하게 사용하는 방법이 있을까?",
+    },
   ],
 });
