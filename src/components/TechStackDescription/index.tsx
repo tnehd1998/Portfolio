@@ -31,6 +31,13 @@ const TechStackDescription = () => {
           level={80}
         />
         <TechStackItem
+          name={"NextJS"}
+          imageUrl={
+            "https://user-images.githubusercontent.com/72953316/151731966-14852282-762a-470a-8502-74f778b2c1bb.png"
+          }
+          level={60}
+        />
+        <TechStackItem
           name={"Recoil"}
           imageUrl={
             "https://user-images.githubusercontent.com/72953316/151725152-83583fc0-042c-4f00-b85d-33424cb923db.png"
@@ -73,14 +80,14 @@ const TechStackDescription = () => {
           imageUrl={
             "https://user-images.githubusercontent.com/72953316/139514754-6095ae9a-e430-4721-9ad6-d79617cc7303.png"
           }
-          level={45}
+          level={35}
         />
         <TechStackItem
-          name={"NextJS"}
+          name={"tailwindCSS"}
           imageUrl={
-            "https://user-images.githubusercontent.com/72953316/151731966-14852282-762a-470a-8502-74f778b2c1bb.png"
+            "https://user-images.githubusercontent.com/72953316/162731954-07916f07-db60-4438-ba22-214bfc18e425.png"
           }
-          level={50}
+          level={40}
         />
       </TechStackWrapper>
       <Category>개발자 도구</Category>
