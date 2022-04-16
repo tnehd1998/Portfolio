@@ -89,6 +89,13 @@ const TechStackDescription = () => {
           }
           level={40}
         />
+        <TechStackItem
+          name={"Zustand"}
+          imageUrl={
+            "https://user-images.githubusercontent.com/72953316/163657176-5fedd37b-d786-4fcf-bf93-7a193eeb2e15.png"
+          }
+          level={40}
+        />
       </TechStackWrapper>
       <Category>개발자 도구</Category>
       <TechStackWrapper>

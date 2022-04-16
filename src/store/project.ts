@@ -1,4 +1,5 @@
 import { atom } from "recoil";
+import MLBSuperstarImage from "../assets/images/mlb-superstar.png";
 import KUNAImage from "../assets/images/kuna.png";
 import MLBImage from "../assets/images/mlb.png";
 import PortfolioImage from "../assets/images/portfolio.png";
@@ -9,11 +10,22 @@ export const projectsState = atom<IProject[]>({
   key: "projectsState",
   default: [
     {
+      imageUrl: MLBSuperstarImage,
+      title: "SuperStar 프로젝트",
+      period: "22.04.02 ~ 현재 진행중",
+      descriptions: [
+        "유명 메이저리그 선수의 정보 및 활약 영상을 확인할 수 있는 프로젝트",
+        "Mobile First Design으로 제작해 본 프로젝트",
+      ],
+      projectLink: "https://github.com/tnehd1998/MLB-SuperStars",
+      hashtags: ["MLB", "간편", "개인", "스타"],
+    },
+    {
       imageUrl: MLBImage,
       title: "MLB 프로젝트",
       period: "21.12.19 ~ 현재 진행중",
       descriptions: [
-        "메이저리그를 소개해 주는 사이트",
+        "메이저리그를 소개해 주는 프로젝트",
         "많은 사람들이 MLB를 즐겼으면 하는 마음에 시작하게된 개인 프로젝트",
       ],
       projectLink: "https://github.com/tnehd1998/MLB",
