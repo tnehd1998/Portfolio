@@ -43,5 +43,12 @@ export const blogState = atom<IBlog[]>({
       title: "[Recoil] Recoil 200% 활용하기",
       question: "Recoil을 좀 더 확실하게 사용하는 방법이 있을까?",
     },
+    {
+      blogId: 7,
+      blogLink:
+        "https://velog.io/@tnehd1998/tsconfig.json-%EB%82%B4%EC%9A%A9-%EC%A0%95%EB%A6%AC",
+      title: "tsconfig.json 내용 정리",
+      question: "TypeScript를 직접 설정할 수는 없을까?",
+    },
   ],
 });
