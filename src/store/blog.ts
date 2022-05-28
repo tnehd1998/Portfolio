@@ -50,5 +50,13 @@ export const blogState = atom<IBlog[]>({
       title: "tsconfig.json 내용 정리",
       question: "TypeScript를 직접 설정할 수는 없을까?",
     },
+    {
+      blogId: 8,
+      blogLink:
+        "https://velog.io/@tnehd1998/%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-www.google.com%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%96%88%EC%9D%84-%EB%95%8C-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EA%B3%BC%EC%A0%95",
+      title: "주소창에 www.google.com을 입력했을 때 일어나는 과정",
+      question:
+        "우리가 입력하는 웹 페이지는 어떤 과정을 통해 웹사이트에 나타나는 걸까?",
+    },
   ],
 });
