@@ -10,17 +10,6 @@ export const projectsState = atom<IProject[]>({
   key: "projectsState",
   default: [
     {
-      imageUrl: MLBSuperstarImage,
-      title: "SuperStar 프로젝트",
-      period: "22.04.02 ~ 현재 진행중",
-      descriptions: [
-        "유명 메이저리그 선수의 정보 및 활약 영상을 확인할 수 있는 프로젝트",
-        "Mobile First Design으로 제작해 본 프로젝트",
-      ],
-      projectLink: "https://github.com/tnehd1998/MLB-SuperStars",
-      hashtags: ["MLB", "간편", "개인", "스타"],
-    },
-    {
       imageUrl: MLBImage,
       title: "MLB 프로젝트",
       period: "21.12.19 ~ 현재 진행중",
@@ -30,6 +19,17 @@ export const projectsState = atom<IProject[]>({
       ],
       projectLink: "https://github.com/tnehd1998/MLB",
       hashtags: ["MLB", "취미", "개인", "팬 페이지"],
+    },
+    {
+      imageUrl: MLBSuperstarImage,
+      title: "SuperStar 프로젝트",
+      period: "22.04.02 ~ 22.04.16",
+      descriptions: [
+        "유명 메이저리그 선수의 정보 및 활약 영상을 확인할 수 있는 프로젝트",
+        "Mobile First Design으로 제작해 본 프로젝트",
+      ],
+      projectLink: "https://github.com/tnehd1998/MLB-SuperStars",
+      hashtags: ["MLB", "간편", "개인", "스타"],
     },
     {
       imageUrl: PortfolioImage,
