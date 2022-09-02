@@ -5,4 +5,5 @@ export const Wrapper = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 `;

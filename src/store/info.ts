@@ -31,6 +31,11 @@ export const careersState = atom<ICareer[]>({
   key: "careersState",
   default: [
     {
+      logo: "https://t1.kakaocdn.net/kakaocorp/corp_thumbnail/Kakao.png",
+      name: "카카오 Daum 포털개발셀",
+      period: "2022.09 ~ 현재",
+    },
+    {
       logo: "https://user-images.githubusercontent.com/72953316/139514581-a4764ae3-07ed-49ab-9695-ee4c93ed2f5c.jpeg",
       name: "건국대학교",
       period: "2017.03 ~ 현재",
